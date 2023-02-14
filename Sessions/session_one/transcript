@@ -1,0 +1,150 @@
+# Reading pref.tcl
+# OpenFile C:/GitHub/Siemens_Diploma/Sessions/session_one/testing.v
+vlib work
+vlog -reportprogress 300 -work work C:/GitHub/Siemens_Diploma/Sessions/session_one/testing.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:05:44 on Feb 14,2023
+# vlog -reportprogress 300 -work work C:/GitHub/Siemens_Diploma/Sessions/session_one/testing.v 
+# End time: 15:05:44 on Feb 14,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog testing.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:06:10 on Feb 14,2023
+# vlog -reportprogress 300 testing.v 
+# End time: 15:06:10 on Feb 14,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim test
+# vsim test 
+# Start time: 15:06:17 on Feb 14,2023
+# ** Error: (vsim-3170) Could not find 'test'.
+#         Searched libraries:
+#             C:/GitHub/Siemens_Diploma/Sessions/session_one/work
+# Error loading design
+# End time: 15:06:17 on Feb 14,2023, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# Load canceled
+vlog testing.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:06:45 on Feb 14,2023
+# vlog -reportprogress 300 testing.v 
+# -- Compiling module test
+# ** Error: (vlog-13069) testing.v(6): near "end": syntax error, unexpected end.
+# End time: 15:06:45 on Feb 14,2023, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
+vlog testing.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:06:59 on Feb 14,2023
+# vlog -reportprogress 300 testing.v 
+# -- Compiling module test
+# ** Error: testing.v(2): In, out, or inout does not appear in port list: A.
+# ** Error: testing.v(3): In, out, or inout does not appear in port list: B.
+# End time: 15:06:59 on Feb 14,2023, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+# C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
+vlog testing.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:07:23 on Feb 14,2023
+# vlog -reportprogress 300 testing.v 
+# -- Compiling module test
+# 
+# Top level modules:
+# 	test
+# End time: 15:07:23 on Feb 14,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim test
+# vsim test 
+# Start time: 15:07:26 on Feb 14,2023
+# Loading work.test
+add wave *
+force A 0110
+run
+quit -sin
+# unknown switch: -sin
+quit -sim
+# End time: 15:08:08 on Feb 14,2023, Elapsed time: 0:00:42
+# Errors: 0, Warnings: 0
+vlog testing.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:08:26 on Feb 14,2023
+# vlog -reportprogress 300 testing.v 
+# -- Compiling module test
+# 
+# Top level modules:
+# 	test
+# End time: 15:08:26 on Feb 14,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim test
+# vsim test 
+# Start time: 15:08:29 on Feb 14,2023
+# Loading work.test
+add wave *
+force A 0110
+run
+quit -sim
+# End time: 15:09:11 on Feb 14,2023, Elapsed time: 0:00:42
+# Errors: 0, Warnings: 0
+vlog testing.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:09:21 on Feb 14,2023
+# vlog -reportprogress 300 testing.v 
+# -- Compiling module test
+# 
+# Top level modules:
+# 	test
+# End time: 15:09:21 on Feb 14,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim test
+# vsim test 
+# Start time: 15:09:25 on Feb 14,2023
+# Loading work.test
+add wave *
+force A 0110
+run
+force A 0000
+run
+quit -sim
+# End time: 15:10:14 on Feb 14,2023, Elapsed time: 0:00:49
+# Errors: 0, Warnings: 0
+vlog testing.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:11:53 on Feb 14,2023
+# vlog -reportprogress 300 testing.v 
+# -- Compiling module test
+# 
+# Top level modules:
+# 	test
+# End time: 15:11:53 on Feb 14,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim test
+# vsim test 
+# Start time: 15:11:56 on Feb 14,2023
+# Loading work.test
+add wave *
+force A 1011
+run
+force A 0111
+run
+force A 0000
+run
+force A 1000
+run
+quit -sim
+# End time: 15:13:04 on Feb 14,2023, Elapsed time: 0:01:08
+# Errors: 0, Warnings: 0
+do doFile.tcl
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:13:38 on Feb 14,2023
+# vlog -reportprogress 300 testing.v 
+# -- Compiling module test
+# 
+# Top level modules:
+# 	test
+# End time: 15:13:38 on Feb 14,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim test 
+# Start time: 15:13:38 on Feb 14,2023
+# Loading work.test
+quit -sim
+# End time: 15:13:48 on Feb 14,2023, Elapsed time: 0:00:10
+# Errors: 0, Warnings: 0

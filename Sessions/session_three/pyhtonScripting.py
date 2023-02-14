@@ -57,3 +57,51 @@ def read_file(file_path="/data/"):
 
 print(read_file())
 print(read_file("/data/ahmed.txt"))
+
+# defining the path of the file
+filePath = 'anyFile.txt'
+
+# opening the path in write mode
+file = open(filePath, 'w')
+# when we open the file in write mode, it will create the file if it doesn't exist.
+# and it will clear all the content if the file already exists.
+file.write('Hello World')
+file.close()
+
+# opening the path in append mode
+file = open(filePath, 'a')
+file.write('\nThis is the second line')
+file.close()
+
+# opening the path in reading mode
+file = open(filePath, 'r')
+print(file.read())
+file.close()
+
+# in this block we need to read a file with multiple lines and remove the empty lines.
+path = "newLinesStriping.txt"
+file = open(path, 'r')
+lines = file.readlines()
+cleanContent = []
+print(lines)
+for line in lines:
+    if line.strip() != "":
+        cleanContent.append(line.strip())
+
+# now I want to write this in the anyFile
+file2 = open("anyFile.txt", 'w')
+for content in cleanContent:
+    file2.write(content + "\n")
+file2.close()
+file.close()
+
+# modules
+# modules are files that contain python code.
+# modules are used to organize the code.
+# modules are used to reuse the code.
+# modules are used to share the code.
+# modules are used to make the code more readable.
+# modules are used to make the code more maintainable.
+# modules are used to make the code more testable.
+# modules are used to make the code more scalable.
+# modules are used to make the code more secure.
