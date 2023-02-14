@@ -17,6 +17,8 @@
 *  optimization depend on two things:
     1.    the written RTL
     2.    the simulator
+
+* we can put label for anything in VHDL. 
 ## VHDL Syntax
 * we have two units
 * Entity:
@@ -122,4 +124,19 @@ end configuration
    * if the process has no sensitivity parameters, then it will be executed only once. 
    * wait on is similar to the sensitivity list.
    * you may use a label for the process by puting it before the process keyword.
-   * 
+ * if we set an instruction outside a process, so it will be a concurrent, otherwise if it was defined inside a process block so it will be executed sequentially
+ * we usually use the process block to work with clocks and sequential logic.
+
+### Delta Delays
+* this is a infinite small delay
+* after it we change the value of our port or reg. 
+* so the signal gets its RHV after small time which is the delta delay.
+* for simulations we shouldn't ignore it because designers when they design they take it in their considirations. 
+
+* considering this example:
+  * B<= A
+  * C <= B
+* here C will take 2 deltas to get its value because it must wait one delta for B
+* then it will take its one delta time to assign its value. 
+
+### 
