@@ -1,6 +1,8 @@
 module test (A, B); 
 input wire [3:0]A; 
-output wire [3:0]B; 
+output wire [11:0]B; 
+wire [11:0]C;
+assign C = 3'hABC; 
 
-assign B = !A; 
+assign B = C; 
 endmodule

@@ -148,3 +148,214 @@ do doFile.tcl
 quit -sim
 # End time: 15:13:48 on Feb 14,2023, Elapsed time: 0:00:10
 # Errors: 0, Warnings: 0
+do doFile.tcl
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:39:29 on Feb 14,2023
+# vlog -reportprogress 300 testing.v 
+# -- Compiling module test
+# ** Error: (vlog-13069) testing.v(5): near "=": syntax error, unexpected '='.
+# ** Error: testing.v(5): (vlog-13205) Syntax error found in the scope following 'C'. Is there a missing '::'?
+# End time: 15:39:29 on Feb 14,2023, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+# ** Error: C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./doFile.tcl line 1
+# C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog testing.v"
+do doFile.tcl
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:40:09 on Feb 14,2023
+# vlog -reportprogress 300 testing.v 
+# -- Compiling module test
+# ** Error: (vlog-13069) testing.v(5): near "=": syntax error, unexpected '='.
+# ** Error: testing.v(5): (vlog-13205) Syntax error found in the scope following 'C'. Is there a missing '::'?
+# End time: 15:40:09 on Feb 14,2023, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+# ** Error: C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./doFile.tcl line 1
+# C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog testing.v"
+do doFile.tcl
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:40:33 on Feb 14,2023
+# vlog -reportprogress 300 testing.v 
+# -- Compiling module test
+# ** Warning: testing.v(5): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# Top level modules:
+# 	test
+# End time: 15:40:33 on Feb 14,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# vsim test 
+# Start time: 15:40:33 on Feb 14,2023
+# Loading work.test
+run
+quit -sim
+# End time: 15:41:06 on Feb 14,2023, Elapsed time: 0:00:33
+# Errors: 0, Warnings: 0
+
+do doFile.tcl
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:41:10 on Feb 14,2023
+# vlog -reportprogress 300 testing.v 
+# -- Compiling module test
+# ** Warning: testing.v(5): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# Top level modules:
+# 	test
+# End time: 15:41:10 on Feb 14,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# vsim test 
+# Start time: 15:41:11 on Feb 14,2023
+# Loading work.test
+run
+quit -sim
+# End time: 15:42:27 on Feb 14,2023, Elapsed time: 0:01:16
+# Errors: 0, Warnings: 0
+do doFile.tcl
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:42:31 on Feb 14,2023
+# vlog -reportprogress 300 testing.v 
+# -- Compiling module test
+# ** Warning: testing.v(5): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# Top level modules:
+# 	test
+# End time: 15:42:31 on Feb 14,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# vsim test 
+# Start time: 15:42:31 on Feb 14,2023
+# Loading work.test
+run
+quit -sim
+# End time: 15:44:10 on Feb 14,2023, Elapsed time: 0:01:39
+# Errors: 0, Warnings: 0
+do doFile.tcl
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:44:17 on Feb 14,2023
+# vlog -reportprogress 300 testing.v 
+# -- Compiling module test
+# 
+# Top level modules:
+# 	test
+# End time: 15:44:17 on Feb 14,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim test 
+# Start time: 15:44:17 on Feb 14,2023
+# Loading work.test
+run
+quit -sim
+# End time: 15:44:52 on Feb 14,2023, Elapsed time: 0:00:35
+# Errors: 0, Warnings: 0
+do doFile.tcl
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 15:44:54 on Feb 14,2023
+# vlog -reportprogress 300 testing.v 
+# -- Compiling module test
+# ** Warning: testing.v(5): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# Top level modules:
+# 	test
+# End time: 15:44:54 on Feb 14,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# vsim test 
+# Start time: 15:44:54 on Feb 14,2023
+# Loading work.test
+run
+quit -sim
+# End time: 15:45:10 on Feb 14,2023, Elapsed time: 0:00:16
+# Errors: 0, Warnings: 0
+vlog halfAdder.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:00:32 on Feb 14,2023
+# vlog -reportprogress 300 halfAdder.v 
+# -- Compiling module HA
+# ** Error: (vlog-13069) halfAdder.v(1): near "#": syntax error, unexpected '#', expecting ')'.
+# End time: 16:00:32 on Feb 14,2023, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
+vlog halfAdder.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:00:46 on Feb 14,2023
+# vlog -reportprogress 300 halfAdder.v 
+# -- Compiling module HA
+# ** Error: (vlog-13069) halfAdder.v(1): near "#": syntax error, unexpected '#', expecting ')'.
+# End time: 16:00:46 on Feb 14,2023, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
+vlog halfAdder.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:00:57 on Feb 14,2023
+# vlog -reportprogress 300 halfAdder.v 
+# -- Compiling module HA
+# ** Error: (vlog-13069) halfAdder.v(1): near "parameter": syntax error, unexpected parameter, expecting ')'.
+# End time: 16:00:57 on Feb 14,2023, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
+vlog halfAdder.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:01:06 on Feb 14,2023
+# vlog -reportprogress 300 halfAdder.v 
+# -- Compiling module HA
+# ** Error: halfAdder.v(11): (vlog-2730) Undefined variable: 'Sum'.
+# ** Error: halfAdder.v(12): (vlog-2730) Undefined variable: 'Carry'.
+# End time: 16:01:06 on Feb 14,2023, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+# C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
+vlog halfAdder.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:01:18 on Feb 14,2023
+# vlog -reportprogress 300 halfAdder.v 
+# -- Compiling module HA
+# 
+# Top level modules:
+# 	HA
+# End time: 16:01:18 on Feb 14,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim HA
+# vsim HA 
+# Start time: 16:01:22 on Feb 14,2023
+# Loading work.HA
+add wave *
+force A 00110011
+force B 11111111
+run
+force B 01000000
+run
+force A 10
+force B 10
+run
+force A 1
+force B 0
+run
+quit -sim
+# End time: 16:03:43 on Feb 14,2023, Elapsed time: 0:02:21
+# Errors: 0, Warnings: 0
+vlog halfAdder.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 16:03:50 on Feb 14,2023
+# vlog -reportprogress 300 halfAdder.v 
+# -- Compiling module HA
+# 
+# Top level modules:
+# 	HA
+# End time: 16:03:50 on Feb 14,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim HA
+# vsim HA 
+# Start time: 16:03:52 on Feb 14,2023
+# Loading work.HA
+add wave *
+force A 1
+force B 1
+run
+force B 0
+run
+force B 0
+force A 0
+run
+
+quit -sim
+# End time: 16:04:34 on Feb 14,2023, Elapsed time: 0:00:42
+# Errors: 0, Warnings: 0

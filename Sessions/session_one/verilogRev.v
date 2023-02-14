@@ -4,7 +4,7 @@
 // numeric constants 
 8'b00001010 // 8 bit binary constant
 8'd10 // 8 bit decimal constant
-8'h0A // 8 bit hex constant
+8'h0A // 8 bit hex constant -> this is 8 bits but represented in hex form. -> each 4 bits are reserved for one hex digit.
 8'o12 // 8 bit octal constant -> this is 8 bits but represented in octal form. 
 // if we declared more bits for values which doesn't have that many bits, then the extra bits will be 0, from the left. 
 "k" // this is ascii character constant.
@@ -192,3 +192,15 @@ default:;
 endcase
 end
 end
+
+//NOte: X and x represents unknown value, Z and z represents high impedance, ? represents don't care value.
+time = 0ns // this represents the time of the simulation., and it is represented in 64 unsigned bits. 
+
+// reg A[3:0] != reg A [0:3]; -> the slicing represents where to place the MSB and LSB 
+// so in [3:0] the MSB is the most left bit and the LSB is the most right bit.
+// and in [0:3] the MSB is the most right bit and the LSB is the most left bit.
+// mashy bs hal fe [0:3] msln lw 3mlt selection keda A[0] da haygeb el 3la el shmal 5ales wla el 3la el ymen khales?
+
+// blocking statments are executed in sequence, and non blocking statments are executed in parallel.
+// blocking statments will wait in the line until this line is executed to can go to the next line, and non blocking statments will go to the next line without waiting.
+// blocking statments can be executed in parallel but in different blocks, but in the same block they must be executed in sequence. 
