@@ -21,4 +21,19 @@
 ### latches
 * latch is a level sensitive. 
 * while flipflop is an edge sensitive. 
-* 
+* latch usually has a lot of timing issues
+* so we prefer using flip flops
+
+### shifting
+* we usually make the shifting process by using the concatination { }
+
+### testbench for sequential
+* delay is usually by nano seconds
+* we use forever loop to be able to make the clock. 
+* we use the initial block to set our initial values 
+* bn7tag ne3ml el awl reset le fatra twela shwya, w b3d ma n5ly el reset b 0 brdo bn7tag nestna shwaya 34an neb2a mot2kden el el state el hanshtghl 3aleha de state wad7a.
+
+* $stop this stops the simulation
+* $random this generates random values
+* $display('') this display some data on the terminals
+* @(negedge clk) -> this is called a blocking event
