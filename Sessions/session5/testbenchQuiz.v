@@ -37,4 +37,4 @@ module dff_en_pre_tb ();
         end
         $stop ;
     end
-endmodule
+endmodule // in test benches we should usually cover all our cases.

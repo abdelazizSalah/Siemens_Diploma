@@ -37,3 +37,5 @@
 * $random this generates random values
 * $display('') this display some data on the terminals
 * @(negedge clk) -> this is called a blocking event
+* odam brdu el randomization mmkn ne2dr behom enna n7dd e7na 3auzen kam percent en el parameter yakhod value mo3yna, w el b2y yakhod kema tanya.
+* lama tkon bt3ml testbench 5aleh hwa y2olak enta 3adet el test wla laa 3n tre2 enk te3ml display to some good indication strings. 
