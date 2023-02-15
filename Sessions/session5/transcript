@@ -1,0 +1,61 @@
+# Reading pref.tcl
+# OpenFile C:/GitHub/Siemens_Diploma/Sessions/session5/quiz.v
+do script.tcl
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 19:33:01 on Feb 15,2023
+# vlog -reportprogress 300 quiz.v 
+# -- Compiling module Session2Quiz
+# 
+# Top level modules:
+# 	Session2Quiz
+# End time: 19:33:01 on Feb 15,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim Session2Quiz 
+# Start time: 19:33:01 on Feb 15,2023
+# Loading work.Session2Quiz
+# ** UI-Msg (suppressible): (vsim-4008) Object 'clk' not found.
+# Error in macro ./script.tcl line 4
+# ** UI-Msg (suppressible): (vsim-4008) Object 'clk' not found.
+# 
+#     while executing
+# "force clk 0"
+force -freeze sim:/Session2Quiz/clock 1 0, 0 {50 ps} -r 100
+do script.tcl
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 19:34:02 on Feb 15,2023
+# vlog -reportprogress 300 quiz.v 
+# -- Compiling module Session2Quiz
+# 
+# Top level modules:
+# 	Session2Quiz
+# End time: 19:34:02 on Feb 15,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 19:34:05 on Feb 15,2023, Elapsed time: 0:01:04
+# Errors: 0, Warnings: 0
+# vsim Session2Quiz 
+# Start time: 19:34:05 on Feb 15,2023
+# Loading work.Session2Quiz
+# ** UI-Msg (suppressible): (vsim-4008) Object 'rst' not found.
+# Error in macro ./script.tcl line 5
+# ** UI-Msg (suppressible): (vsim-4008) Object 'rst' not found.
+# 
+#     while executing
+# "force rst 1"
+do script.tcl
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 19:34:40 on Feb 15,2023
+# vlog -reportprogress 300 quiz.v 
+# -- Compiling module Session2Quiz
+# 
+# Top level modules:
+# 	Session2Quiz
+# End time: 19:34:40 on Feb 15,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 19:34:43 on Feb 15,2023, Elapsed time: 0:00:38
+# Errors: 0, Warnings: 0
+# vsim Session2Quiz 
+# Start time: 19:34:43 on Feb 15,2023
+# Loading work.Session2Quiz
+run
+# End time: 19:35:28 on Feb 15,2023, Elapsed time: 0:00:45
+# Errors: 0, Warnings: 0

@@ -1,0 +1,34 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/GitHub/Siemens_Diploma/Sessions/session5
+vSession2Quiz
+!s110 1676482480
+!i10b 1
+!s100 ed;N9Y`_GWf9`dgOEf<e22
+!s11b Dg1SIo80bB@j0V0VzS_@n1
+I5IXnUWd_CW^60PD:Mz_N?1
+VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1676482183
+8quiz.v
+Fquiz.v
+!i122 3
+L0 1 29
+OV;L;2020.1;71
+r1
+!s85 0
+31
+!s108 1676482480.000000
+!s107 quiz.v|
+!s90 -reportprogress|300|quiz.v|
+!i113 1
+tCvgOpt 0
+n@session2@quiz
