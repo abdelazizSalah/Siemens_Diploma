@@ -21,6 +21,10 @@
 * we use variables instead of signals to avoid raising latches, and to be reused. 
 * so variables should not raise latches.
 * we can put label for anything in VHDL. 
+
+* mehtag matfkrsh 3l code bta3k zy el C wl software, laa mehtag tfkr feh hardware wise, w ezay by7sl modeling lel code bta3y w ezay el hagat btt7t wara b3dha
+* we have something called unconstraied array, which is defining an array without defining its size,and it is unsynthesizable, unless that we define its size on each time we call it. 
+  
 ## VHDL Syntax
 * we have two units
 * Entity:
@@ -160,4 +164,97 @@ end configuration
       1. logic
    4. end if
 > Note: lw 7tet if gowa sequential statment, w m8atetsh kol el cases el meeting hay3ml latch, w de haga wehsha, ehna dayman bnhawl ntganbha. 
-> 
+
+2. case (Selector) is
+   1. when (condition) => 
+      1. logic
+   2. when (condition) => 
+      1. logic
+   3. when others =>
+      1. logic
+   4. end case 
+> if we used the Selector as definedEnum which may take 9 values (x, L, 0x, 0Z, etc...) then we must use when others, while if we used the bit vector so using when others is optional 
+
+3. For loops
+   1. for (iterator) in (begining index) to (ending index) loop
+      1. logic
+   2. end loop
+> loops are used to synthesize and build same hardware component multiple times. 
+> we can only use one iterator per loop, we can't use i and j.
+4. while (codition) loop
+      1. logic
+   1. end loop
+
+5. for generate 
+   1. for (iterator) in (SOME_RANGE) generate
+      1. build some predefined blocks
+   2. end generate
+> this is used to generate certain block multiple times as a hardware block. 
+> here we can use combinational logic
+> usually used when you have a component built by you
+> while the normal loop is used to re-produce multiple built in components
+
+### Subtypes 
+* b3ml type gded mn type already mwgod, zy mykon msln 3ndy integer, fa a3rf mno sub type w a7ot 3leh condition msln, eno ykon int from range -127 to 128 msln
+* w b3d keda a2dr a3rf menha variables from this subtype w hakza baa fahem. 
+
+### Attributes 
+* Syntax:   
+  * (VariableName)'(Attribute_Name)
+* this attribute is a built in function or data which apply some logic or data of the variable
+* so we may return the minimum number in array for example. 
+
+### Aggregates 
+* It is a list of expressions, separated by commas and enclosed by brackets. 
+* Syntax:
+  * array (5 downto 0) of STD_LOGIC_VECTOR (3 down to 0)
+  * ( "0110", "1000" , others => "0000")
+  * keda ana b3rf array 7agmo 6 amakn , kol mkan 3obara 3n 4 bits.
+
+### Assertions
+* assertion is used to check on booleans 
+* if this boolean result was false, then we raise certain text on the monitor. 
+* it act as an information for the user, so it doesn't affect on the values of the model. 
+* we have something called **Saverity**
+  * this has 4 values 
+      1. Note
+      2. Error
+      3. Warnning 
+      4. Failure
+1. Note => doesn't break the simulation but print note in the transcript output
+2. Warnning => same as NOTE
+3. Error => same as them but it just print it in red in transcript. 
+4. Failure => this breaks the simulation, we use it if we have a very sensitive cases and we don't want to continue if this case happened. 
+
+### Procedures 
+* this is called the first VHDL subprogram. 
+* it is used to break the proccesses into multiple block. 
+* each block can communicate with the other by calling it. 
+* mainly used to make the code clear and avoid redundancy. 
+* each procedure has multiple parameters 
+* syntax of creation:
+  * procedure ASSIGN (parameterName: parameterType) is begin
+    * logic
+  * end ASSIGN
+* syntax of calling 
+  * ASSIGN ("sentArgument");
+
+> Note: inside the procedure you can change the real values of the sent signals, this property  doesn't exist in the Function
+
+*  by default the direction of the parameters are input, but we may define their directions. 
+*  we can set initial values for the parameters 
+*  if we set initial values, so we may don't send this parameter during the call. 
+*  in parameter can only be read , 
+*  out parameter can only be updated 
+*  inout can be read and updated
+*  return statment can exist anywhere in the procedure, but it is optional, we may don't use it at all. 
+
+### Functions
+* this is called the second VHDL subprogram. 
+* it is used to define any logical or mathematical function to calculate a single result
+* it must return result, so the return statment is mandatory.
+* it may contain more than one return statement.
+* it must define the return datatype
+* it can't affect the real value of any signal outside it, it just affect the results if it was assigned to it after the return, even the arguments that are sent to it, so it just apply certain algorithm and return certain returntype. 
+* it can not contain a wait statement
+* can't define in or out ports
