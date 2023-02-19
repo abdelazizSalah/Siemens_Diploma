@@ -18,6 +18,8 @@
     1.    the written RTL
     2.    the simulator
 
+* we use version VHDL 1993 and 2002
+
 * we use variables instead of signals to avoid raising latches, and to be reused. 
 * so variables should not raise latches.
 * we can put label for anything in VHDL. 
@@ -258,3 +260,23 @@ end configuration
 * it can't affect the real value of any signal outside it, it just affect the results if it was assigned to it after the return, even the arguments that are sent to it, so it just apply certain algorithm and return certain returntype. 
 * it can not contain a wait statement
 * can't define in or out ports
+
+### Hierarchical names -> newly added in VHDL 2008
+* in VHDL we call it external names
+* it allows me to access a signal outside the Entity in which I am working on.
+* they are embedded inside << >>
+* inside them we define our external name. 
+* its value can be assigned to a signal inside our Entity. 
+* this operator (^) allow me to go one stage up, same as (../) in operating systems. 
+* this operator (@) specify certain package content. 
+
+### Enhanced Generics
+* now we can use generic as a type, subtype, packages or even function. 
+
+### UVVM
+* using of the VHDL in verification is not usually used in verification
+* system verilog contains some logic of oop
+* but it is not synthesized
+* but these logic is not implemented in VHDL
+* but instead they used the UVVM 
+* which is a methodolgy used for making structured VHDL-based testbenches to be able to copy the idea of the oop to be able to use the VHDL in verification.
