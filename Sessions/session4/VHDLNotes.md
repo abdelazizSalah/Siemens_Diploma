@@ -18,6 +18,8 @@
     1.    the written RTL
     2.    the simulator
 
+* we use variables instead of signals to avoid raising latches, and to be reused. 
+* so variables should not raise latches.
 * we can put label for anything in VHDL. 
 ## VHDL Syntax
 * we have two units
@@ -31,6 +33,8 @@
   * each entity can have one or more architecture
   * and each one is specified when to be used.
   * The meaning of existing more than one architecture is that at some times maybe you want to change the behaviour of your module to do different operations at certain situations
+* we use this operator (:=) to assign variables 
+* while we use this operator (<=) to assign signals. 
 ### Internal signals
   * they are the wires which connects two gates together.
 
@@ -139,4 +143,21 @@ end configuration
 * here C will take 2 deltas to get its value because it must wait one delta for B
 * then it will take its one delta time to assign its value. 
 
-### 
+### Rules for synthesising process
+1. the senstivity list must be full, by which we mean that is should contains all the changed signals. 
+
+2. something
+
+3. something
+
+### Sequential statements 
+1. if statement 
+   1. if (condition) then 
+      1. logic
+   2. elsif (condition) then
+      1. logic
+   3. else 
+      1. logic
+   4. end if
+> Note: lw 7tet if gowa sequential statment, w m8atetsh kol el cases el meeting hay3ml latch, w de haga wehsha, ehna dayman bnhawl ntganbha. 
+> 
