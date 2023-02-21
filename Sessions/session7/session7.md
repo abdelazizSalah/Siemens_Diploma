@@ -95,3 +95,48 @@
 * here our sensitivity will contain only the clock. 
 * other signals will be checked only inside the always block. 
 
+
+### Good/Bad practices in Digital Designs
+1. Unintentional Latch
+   1. this occurs when we don't cover all the cases in the if conditions. 
+   2. to solve it we can just add else statement
+   3. but we just put the else statment only if we didn't cover all the conditions. 
+   4. even if we added else statement we may write else and add a storage element, which also add a sequential element.
+   5. if we stored the element so we are using a sequential logic. 
+   6. another way to avoid Latches is to set an initial or default values in the beginning of the code. 
+2. Blocking vs non-Blocking assignments
+   1. Blocking is denoted by "="
+      1. evaluation within the always block is **blocked** until this assignment is completed. 
+      2. we use it only if we are using a combinational logic.
+   2. Non-Blocking is denoted by "<=" 
+      1. it is evaluated in parallel, the results are assigned at the end of the statements.
+      2. always used in sequential logic.
+      
+3. Using multiple clocks
+   1. don't define multiple clocks in the same always block. 
+   2. this is un-synthesizable. 
+4. Sensitivity list contains something which is changed inside its block
+   1. this cause infinite loop. 
+5. Simulation/Synthesis mismatch 
+   1. this may happen due to incomplete sensitivity list. 
+   2. I didn't implement all the signals which affect my sensitivity list
+   3. this may cause that the simulation results are not same as the results of the Synthesis. 
+   4. order of the assignment differs in the synthesis, so this also may result in the same mismatch. 
+6. assignment in multiple always clock
+   1. this is not allowed, because it will cause a racing condition. 
+
+### Clock Dividers
+* we wanna create different clocks from our main clock
+* this happen by using a toggleflipflop
+* this extends the clock frequency to its double value
+* to create more multiples we just cascade the tff after each other.
+
+
+### MEMORY
+1. RAM
+2. ROM
+3. FIFO
+   1. first in first out buffer
+   2. it is circular
+      1. this mean that if we reached the of the buffer we start from the beginning of the buffer.
+   3. 
