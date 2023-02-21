@@ -139,4 +139,53 @@
    1. first in first out buffer
    2. it is circular
       1. this mean that if we reached the of the buffer we start from the beginning of the buffer.
-   3. 
+
+
+### Finite State Machine
+1. we have states
+2. to transfere from state to another we depend on something called transition condition
+3. it has two types
+   1. Mealy -> depend on the current state and the input    
+      1. it is written into shape of two always blocks
+         1. the first one is combinational 
+         2. the second one is sequential
+   2. Moore -> depends only on the current state.
+4. Problems of the FSM 
+   1.  Dead-end states
+       1.  reaching state and can't go out from it. 
+   2.  Unreachable state
+       1.  this state is never executed.
+
+### Design metrics
+1. Speed
+   1. Throughput
+      1. this is the amount of data that is processed per clock cycle (bits per second)
+   2. Latency
+      1. this is the time between data input and processed data output 
+      2. 3dd el cycles el 5dtha mn sa3t ma d5lt el input l7d ma khrgt el output bta3o
+      3. its unit is clock cycle
+   3. Timing
+      1. the logic delays between sequential elements (clock period)
+      2. when a design doesn't meet the timing, it means that the delay of the critical path is greater that the target period. 
+2. Area 
+3. Power
+   1. Dynamic => alpha * f * CL * Vdd^2
+      1. Switching activity.
+   2. Static 
+      1. leakage. 
+
+> we can't meet all the matrices, so it depend on the application which you are implementing. 
+
+### ways of improving the timing
+1. pipelining
+   1. this happens by adding registers between two registers. 
+2.  parallelism
+    1.  duplicating the hardware to finish operations in parallel to each other
+    2.  this doesn't affect on the power 
+    3.  but it enhance the throuhput.
+3.  resource sharing
+    1.  this is used to reduce the hardware. 
+    2.  this is used where  there are functional blocks that can be used in other areas of the design or even in different modules. 
+> always try to think hardware level not as software level  to be able to optimize your code and your hardware. 
+
+
