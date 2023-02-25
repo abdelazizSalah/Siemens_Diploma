@@ -1,0 +1,103 @@
+m255
+K4
+z2
+!s11f MIXED_VERSIONS
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/GitHub/Siemens_Diploma/Sessions/session7
+vFF
+Z1 !s110 1677314799
+!i10b 1
+!s100 58`Q1XICIZ?1kIz9I:M0a2
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I=a1^nlo2z`9Wk1Uc2BKSn3
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z4 w1677314796
+Z5 8examples.v
+Z6 Fexamples.v
+!i122 10
+L0 27 14
+Z7 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z8 !s108 1677314799.000000
+!s107 examples.v|
+Z9 !s90 -reportprogress|300|examples.v|
+!i113 1
+Z10 tCvgOpt 0
+n@f@f
+vHalfAdderUsingAssign
+R1
+!i10b 1
+!s100 @^8Ua=Fo7a:CX4fMg?oB13
+R2
+I_RFmkD1NnS66YUnbl:a]F3
+R3
+R0
+R4
+R5
+R6
+!i122 10
+L0 1 13
+R7
+r1
+!s85 0
+31
+R8
+Z11 !s107 examples.v|
+R9
+!i113 1
+R10
+n@half@adder@using@assign
+vHalfAdderUsingGatesPrimitives
+R1
+!i10b 1
+!s100 `VaiKEf7`n1E`4MLJ50gN3
+R2
+IX^C5IRkR?`afo=SImMPY[1
+R3
+R0
+R4
+R5
+R6
+!i122 10
+L0 15 11
+R7
+r1
+!s85 0
+31
+R8
+R11
+R9
+!i113 1
+R10
+n@half@adder@using@gates@primitives
+vLatch
+R1
+!i10b 1
+!s100 74zBO<Cf3DHCU:niNglBm3
+R2
+I0kOQo1TP7HzO:4kHMTkgk1
+R3
+R0
+R4
+R5
+R6
+!i122 10
+L0 42 11
+R7
+r1
+!s85 0
+31
+R8
+R11
+R9
+!i113 1
+R10
+n@latch

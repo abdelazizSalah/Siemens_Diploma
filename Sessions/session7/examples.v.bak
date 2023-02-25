@@ -1,0 +1,25 @@
+module  HalfAdderUsingAssign (
+    S,C,A,B
+);
+// defining inputs
+input A,B;
+
+// defining outputs
+output S,C;
+
+assign S = A ^ B; // A xor B
+assign C = A&B; // A and B
+    
+endmodule
+
+module HalfAdderUsingGatesPrimitives (S,C,A,B) 
+// defining inputs
+input A,B;
+
+// defining outputs
+output S,C;
+
+xor #2 (S, A,B); // A xor B // #2 is the delay, S is the output which is defined in the begining of the gate
+and #1 (C, A,B); 
+
+endmodule
