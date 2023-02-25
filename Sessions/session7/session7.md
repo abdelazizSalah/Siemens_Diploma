@@ -26,8 +26,8 @@
    1. Propogation of in to out depends on the clock
    2. out is a function of input and history of the last output
    3. Storage is needed
-      1. latches
-      2. flipflop
+      1. latches -> level sensitive.
+      2. flipflop -> edge sensitive.
    4. Example:
       1. Counter
 
@@ -42,9 +42,9 @@
   * we can write always@(*)
     * this means that it is sensitive to any change on the rhs of assignments inside the always block. 
   * if we wrote always@(Clock, Din) in latches behaviour, 
-  * that is because we need to notice anychange for the data during our period 
-  * so we also must make a condition inside the block, that we check that the clock is high, because we want to avoid changing our reg when the clock level is low,
-  * but if there was any change happened we must change its value, so it must be in the sensitivity level. 
+    * that is because we need to notice anychange for the data during our period 
+    * so we also must make a condition inside the block, that we check that the clock is high, because we want to avoid changing our reg when the clock level is low,
+    * but if there was any change happened we must change its value, so it must be in the sensitivity level. 
 * when output depends on several conditions, which requires if-else or case constructs to be fully descriped. 
 
 ### what is Clock? 
@@ -58,9 +58,9 @@
 * that is because we need to set our circuit in a defined state. 
 * We have two types of resets
   * 1. synchronous reset
-    * which is synchronous with the clock
+      * which is synchronous with the clock
   * 2. Asynchronous reset
-    * whenever it comes, it resets the circuit. 
+      * whenever it comes, it resets the circuit. 
 * Asynchronous reset is sensitive to glitches. 
 * Glitch hwa en ye7sl impulse keda fl signal fa tetl3 l wahed w tenzl tany zero mn gher ma ana el akon 7atet el value bnfsy. 
 * Synchronous reset, require that the length of the reset high must be long enough to be seen by the active clock, to be able to apply this action. -> disadvantage of synchronous reset. 
@@ -104,12 +104,16 @@
    4. even if we added else statement we may write else and add a storage element, which also add a sequential element.
    5. if we stored the element so we are using a sequential logic. 
    6. another way to avoid Latches is to set an initial or default values in the beginning of the code. 
+      1. always @(*) begin 
+      2. something = anything;
+      3. if (anycondition) begin 
+         1. something = newthing
 2. Blocking vs non-Blocking assignments
    1. Blocking is denoted by "="
       1. evaluation within the always block is **blocked** until this assignment is completed. 
       2. we use it only if we are using a combinational logic.
    2. Non-Blocking is denoted by "<=" 
-      1. it is evaluated in parallel, the results are assigned at the end of the statements.
+      1. it is evaluated in parallel, the results are assigned at the end of the block.
       2. always used in sequential logic.
       
 3. Using multiple clocks
@@ -124,10 +128,16 @@
    4. order of the assignment differs in the synthesis, so this also may result in the same mismatch. 
 6. assignment in multiple always clock
    1. this is not allowed, because it will cause a racing condition. 
+      1. ie: always @(*) begin
+      2.    something = newvalue1;
+      3.  end
+      4. always @(*) begin
+      5.    something = newvalue2;
+      6.    end
 
 ### Clock Dividers
 * we wanna create different clocks from our main clock
-* this happen by using a toggleflipflop
+* this happen by using a toggleflipflop (**TFF**)
 * this extends the clock frequency to its double value
 * to create more multiples we just cascade the tff after each other.
 
@@ -138,7 +148,7 @@
 3. FIFO
    1. first in first out buffer
    2. it is circular
-      1. this mean that if we reached the of the buffer we start from the beginning of the buffer.
+      1. this mean that if we reached the END of the buffer we start from the beginning of the buffer.
 
 
 ### Finite State Machine
@@ -157,6 +167,7 @@
        1.  this state is never executed.
 
 ### Design metrics
+* They are the factors on which we can evaluate the system.
 1. Speed
    1. Throughput
       1. this is the amount of data that is processed per clock cycle (bits per second)
@@ -171,6 +182,10 @@
 3. Power
    1. Dynamic => alpha * f * CL * Vdd^2
       1. Switching activity.
+      2. f -> frequency.
+      3. CL -> load capacitance.
+      4. VDD -> max voltage of the circuit.
+      5. alpha -> how much is the  circuit on. 
    2. Static 
       1. leakage. 
 
