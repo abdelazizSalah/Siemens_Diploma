@@ -1,5 +1,4 @@
 vlog Memories.v
-vsim RAM
+vsim ROM
 add wave *  
-add wave mem
-force -freeze sim:/RAM/clk 1 0, 0 {50 ps} -r 100 
+force -freeze sim:/ROM/clk 1 0, 0 {50 ps} -r 100 

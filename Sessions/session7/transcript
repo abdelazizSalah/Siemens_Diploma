@@ -2,118 +2,27 @@
 # OpenFile C:/GitHub/Siemens_Diploma/Sessions/session7/Memories.v
 do script.tcl
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 10:17:12 on Feb 27,2023
+# Start time: 10:37:22 on Feb 27,2023
 # vlog -reportprogress 300 Memories.v 
 # -- Compiling module RAM
-# ** Error: (vlog-13069) Memories.v(1): near ";": syntax error, unexpected ';', expecting ')'.
-# End time: 10:17:12 on Feb 27,2023, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-# ** Error: C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
-# Error in macro ./script.tcl line 1
-# C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
-#     while executing
-# "vlog Memories.v"
-do script.tcl
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 10:17:29 on Feb 27,2023
-# vlog -reportprogress 300 Memories.v 
-# -- Compiling module RAM
-# ** Error: (vlog-13069) Memories.v(1): near ";": syntax error, unexpected ';', expecting ')'.
-# End time: 10:17:29 on Feb 27,2023, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-# ** Error: C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
-# Error in macro ./script.tcl line 1
-# C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
-#     while executing
-# "vlog Memories.v"
-do script.tcl
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 10:18:16 on Feb 27,2023
-# vlog -reportprogress 300 Memories.v 
-# -- Compiling module RAM
-# ** Error: Memories.v(23): (vlog-2110) Illegal reference to net "dataOut".
-# End time: 10:18:16 on Feb 27,2023, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-# ** Error: C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
-# Error in macro ./script.tcl line 1
-# C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
-#     while executing
-# "vlog Memories.v"
-do script.tcl
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 10:18:33 on Feb 27,2023
-# vlog -reportprogress 300 Memories.v 
-# -- Compiling module RAM
+# -- Compiling module ROM
 # 
 # Top level modules:
 # 	RAM
-# End time: 10:18:33 on Feb 27,2023, Elapsed time: 0:00:00
+# 	ROM
+# End time: 10:37:22 on Feb 27,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vsim Ram 
-# Start time: 10:18:33 on Feb 27,2023
-# ** Error: (vsim-3170) Could not find 'Ram'.
-#         Searched libraries:
-#             C:/GitHub/Siemens_Diploma/Sessions/session7/work
-# Error loading design
-# Error: Error loading design
-#        Pausing macro execution
-# MACRO ./script.tcl PAUSED at line 2
-do script.tcl
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 10:18:55 on Feb 27,2023
-# vlog -reportprogress 300 Memories.v 
-# -- Compiling module RAM
-# 
-# Top level modules:
-# 	RAM
-# End time: 10:18:55 on Feb 27,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vsim RAM 
-# Start time: 10:18:33 on Feb 27,2023
-# Loading work.RAM
-force datain 01001
-# ** UI-Msg (suppressible): (vsim-4008) Object 'datain' not found.
-# 
-force dataIn 01001
-force wr 1
-force address 101010
+# vsim ROM 
+# Start time: 10:37:22 on Feb 27,2023
+# Loading work.ROM
+force addr 10
 run
-force wr 0
-forcec rd 1
-# invalid command name "forcec"
-force rd 1
+force addr 11
 run
-add wave mem
-force address 0101
-force wr 1
-force rd 0
-force dataIn 01011010
 run
-quit -sim
-# End time: 10:21:51 on Feb 27,2023, Elapsed time: 0:03:18
-# Errors: 1, Warnings: 0
-do script.tcl
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 10:21:55 on Feb 27,2023
-# vlog -reportprogress 300 Memories.v 
-# -- Compiling module RAM
-# 
-# Top level modules:
-# 	RAM
-# End time: 10:21:55 on Feb 27,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vsim RAM 
-# Start time: 10:21:56 on Feb 27,2023
-# Loading work.RAM
-force wr 1
-force address 0110
-force dataIn 01010101
-force rd 0
 run
-add wave mem
-force rd 1
-force wr 0
+force addr 00
 run
-quit -sim
-# End time: 10:24:55 on Feb 27,2023, Elapsed time: 0:02:59
+run
+# End time: 10:38:38 on Feb 27,2023, Elapsed time: 0:01:16
 # Errors: 0, Warnings: 0
