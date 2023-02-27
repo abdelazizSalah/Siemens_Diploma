@@ -1,4 +1,5 @@
-vlog examples.v
-vsim Latch
+vlog Memories.v
+vsim RAM
 add wave *  
-force -freeze sim:/FF/CLK 1 0, 0 {50 ps} -r 100 
+add wave mem
+force -freeze sim:/RAM/clk 1 0, 0 {50 ps} -r 100 

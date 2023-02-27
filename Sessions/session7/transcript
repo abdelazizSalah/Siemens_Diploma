@@ -1,189 +1,119 @@
 # Reading pref.tcl
-# OpenFile C:/GitHub/Siemens_Diploma/Sessions/session7/examples.v
+# OpenFile C:/GitHub/Siemens_Diploma/Sessions/session7/Memories.v
 do script.tcl
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 10:36:44 on Feb 25,2023
-# vlog -reportprogress 300 examples.v 
-# -- Compiling module HalfAdderUsingAssign
-# -- Compiling module HalfAdderUsingGatesPrimitives
-# -- Compiling module FF
-# ** Error: examples.v(38): (vlog-2110) Illegal reference to net "Q".
-# End time: 10:36:44 on Feb 25,2023, Elapsed time: 0:00:00
+# Start time: 10:17:12 on Feb 27,2023
+# vlog -reportprogress 300 Memories.v 
+# -- Compiling module RAM
+# ** Error: (vlog-13069) Memories.v(1): near ";": syntax error, unexpected ';', expecting ')'.
+# End time: 10:17:12 on Feb 27,2023, Elapsed time: 0:00:00
 # Errors: 1, Warnings: 0
 # ** Error: C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
 # Error in macro ./script.tcl line 1
 # C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
 #     while executing
-# "vlog examples.v"
+# "vlog Memories.v"
 do script.tcl
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 10:37:01 on Feb 25,2023
-# vlog -reportprogress 300 examples.v 
-# -- Compiling module HalfAdderUsingAssign
-# -- Compiling module HalfAdderUsingGatesPrimitives
-# -- Compiling module FF
-# 
-# Top level modules:
-# 	HalfAdderUsingAssign
-# 	HalfAdderUsingGatesPrimitives
-# 	FF
-# End time: 10:37:01 on Feb 25,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vsim FF 
-# Start time: 10:37:01 on Feb 25,2023
-# Loading work.FF
-force -freeze sim:/FF/CLK 1 0, 0 {50 ps} -r 100
-force -freeze sim:/FF/CLK 1 0, 0 {50 ps} -r 100
-quit -sim
-# End time: 10:38:01 on Feb 25,2023, Elapsed time: 0:01:00
-# Errors: 0, Warnings: 0
-do script.tcl
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 10:38:03 on Feb 25,2023
-# vlog -reportprogress 300 examples.v 
-# -- Compiling module HalfAdderUsingAssign
-# -- Compiling module HalfAdderUsingGatesPrimitives
-# -- Compiling module FF
-# 
-# Top level modules:
-# 	HalfAdderUsingAssign
-# 	HalfAdderUsingGatesPrimitives
-# 	FF
-# End time: 10:38:03 on Feb 25,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vsim FF 
-# Start time: 10:38:03 on Feb 25,2023
-# Loading work.FF
-force D 1
-run
-run all
-# Invalid time value: all
-run all 100
-# Invalid time value: all 100
-run all 100ps
-# Invalid time value: all 100ps
-run
-restart
-run -all
-# GetModuleFileName: The specified module could not be found.
-# 
-# 
-run -all
-force D 1
-run
-do script.tcl
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 10:39:14 on Feb 25,2023
-# vlog -reportprogress 300 examples.v 
-# -- Compiling module HalfAdderUsingAssign
-# -- Compiling module HalfAdderUsingGatesPrimitives
-# -- Compiling module FF
-# 
-# Top level modules:
-# 	HalfAdderUsingAssign
-# 	HalfAdderUsingGatesPrimitives
-# 	FF
-# End time: 10:39:14 on Feb 25,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# End time: 10:39:16 on Feb 25,2023, Elapsed time: 0:01:13
-# Errors: 0, Warnings: 0
-# vsim FF 
-# Start time: 10:39:16 on Feb 25,2023
-# Loading work.FF
-run -all 100ps
-# ** UI-Msg: (vsim-4001) Incorrect number of arguments.
-# Usage: run [<timesteps> [<time_units>]] | -all | -continue | -next | -step | -over | -out | -init | -final
-run 100 -all
-# Invalid time value: 100 -all
-run 100ps -all
-force D 1
-run 100ms -all
-quit -sim
-quit -sim
-# End time: 10:40:57 on Feb 25,2023, Elapsed time: 0:01:41
-# Errors: 0, Warnings: 0
-quit -sim
-do script.tcl
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 10:43:47 on Feb 25,2023
-# vlog -reportprogress 300 examples.v 
-# -- Compiling module HalfAdderUsingAssign
-# -- Compiling module HalfAdderUsingGatesPrimitives
-# -- Compiling module FF
-# -- Compiling module Latch
-# ** Error: examples.v(48): (vlog-2730) Undefined variable: 'CLK'.
-# End time: 10:43:47 on Feb 25,2023, Elapsed time: 0:00:00
+# Start time: 10:17:29 on Feb 27,2023
+# vlog -reportprogress 300 Memories.v 
+# -- Compiling module RAM
+# ** Error: (vlog-13069) Memories.v(1): near ";": syntax error, unexpected ';', expecting ')'.
+# End time: 10:17:29 on Feb 27,2023, Elapsed time: 0:00:00
 # Errors: 1, Warnings: 0
 # ** Error: C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
 # Error in macro ./script.tcl line 1
 # C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
 #     while executing
-# "vlog examples.v"
+# "vlog Memories.v"
 do script.tcl
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 10:45:26 on Feb 25,2023
-# vlog -reportprogress 300 examples.v 
-# -- Compiling module HalfAdderUsingAssign
-# -- Compiling module HalfAdderUsingGatesPrimitives
-# -- Compiling module FF
-# -- Compiling module Latch
-# ** Error: examples.v(48): (vlog-2730) Undefined variable: 'CLK'.
-# End time: 10:45:26 on Feb 25,2023, Elapsed time: 0:00:00
+# Start time: 10:18:16 on Feb 27,2023
+# vlog -reportprogress 300 Memories.v 
+# -- Compiling module RAM
+# ** Error: Memories.v(23): (vlog-2110) Illegal reference to net "dataOut".
+# End time: 10:18:16 on Feb 27,2023, Elapsed time: 0:00:00
 # Errors: 1, Warnings: 0
 # ** Error: C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
 # Error in macro ./script.tcl line 1
 # C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
 #     while executing
-# "vlog examples.v"
+# "vlog Memories.v"
 do script.tcl
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 10:46:17 on Feb 25,2023
-# vlog -reportprogress 300 examples.v 
-# -- Compiling module HalfAdderUsingAssign
-# -- Compiling module HalfAdderUsingGatesPrimitives
-# -- Compiling module FF
-# -- Compiling module Latch
-# ** Error: examples.v(47): (vlog-2730) Undefined variable: 'CLK'.
-# End time: 10:46:17 on Feb 25,2023, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-# ** Error: C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
-# Error in macro ./script.tcl line 1
-# C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
-#     while executing
-# "vlog examples.v"
-do script.tcl
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 10:46:39 on Feb 25,2023
-# vlog -reportprogress 300 examples.v 
-# -- Compiling module HalfAdderUsingAssign
-# -- Compiling module HalfAdderUsingGatesPrimitives
-# -- Compiling module FF
-# -- Compiling module Latch
+# Start time: 10:18:33 on Feb 27,2023
+# vlog -reportprogress 300 Memories.v 
+# -- Compiling module RAM
 # 
 # Top level modules:
-# 	HalfAdderUsingAssign
-# 	HalfAdderUsingGatesPrimitives
-# 	FF
-# 	Latch
-# End time: 10:46:39 on Feb 25,2023, Elapsed time: 0:00:00
+# 	RAM
+# End time: 10:18:33 on Feb 27,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vsim Latch 
-# Start time: 10:46:39 on Feb 25,2023
-# Loading work.Latch
-# ** UI-Msg (suppressible): (vsim-4008) Object 'sim:/FF/CLK' not found.
-# Error in macro ./script.tcl line 4
-# ** UI-Msg (suppressible): (vsim-4008) Object 'sim:/FF/CLK' not found.
+# vsim Ram 
+# Start time: 10:18:33 on Feb 27,2023
+# ** Error: (vsim-3170) Could not find 'Ram'.
+#         Searched libraries:
+#             C:/GitHub/Siemens_Diploma/Sessions/session7/work
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./script.tcl PAUSED at line 2
+do script.tcl
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 10:18:55 on Feb 27,2023
+# vlog -reportprogress 300 Memories.v 
+# -- Compiling module RAM
 # 
-#     while executing
-# "force -freeze sim:/FF/CLK 1 0, 0 {50 ps} -r 100 "
-force D 1
-force -freeze sim:/Latch/D 0 0, 1 {25 ps} -r 50
+# Top level modules:
+# 	RAM
+# End time: 10:18:55 on Feb 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim RAM 
+# Start time: 10:18:33 on Feb 27,2023
+# Loading work.RAM
+force datain 01001
+# ** UI-Msg (suppressible): (vsim-4008) Object 'datain' not found.
+# 
+force dataIn 01001
+force wr 1
+force address 101010
 run
-force -freeze sim:/Latch/CLK 1 0, 0 {50 ps} -r 100
+force wr 0
+forcec rd 1
+# invalid command name "forcec"
+force rd 1
 run
-run
-run
+add wave mem
+force address 0101
+force wr 1
+force rd 0
+force dataIn 01011010
 run
 quit -sim
-# End time: 10:48:09 on Feb 25,2023, Elapsed time: 0:01:30
+# End time: 10:21:51 on Feb 27,2023, Elapsed time: 0:03:18
+# Errors: 1, Warnings: 0
+do script.tcl
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 10:21:55 on Feb 27,2023
+# vlog -reportprogress 300 Memories.v 
+# -- Compiling module RAM
+# 
+# Top level modules:
+# 	RAM
+# End time: 10:21:55 on Feb 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim RAM 
+# Start time: 10:21:56 on Feb 27,2023
+# Loading work.RAM
+force wr 1
+force address 0110
+force dataIn 01010101
+force rd 0
+run
+add wave mem
+force rd 1
+force wr 0
+run
+quit -sim
+# End time: 10:24:55 on Feb 27,2023, Elapsed time: 0:02:59
 # Errors: 0, Warnings: 0

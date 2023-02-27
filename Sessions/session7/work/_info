@@ -27,10 +27,10 @@ r1
 !s85 0
 31
 Z8 !s108 1677314799.000000
-!s107 examples.v|
-Z9 !s90 -reportprogress|300|examples.v|
+Z9 !s107 examples.v|
+Z10 !s90 -reportprogress|300|examples.v|
 !i113 1
-Z10 tCvgOpt 0
+Z11 tCvgOpt 0
 n@f@f
 vHalfAdderUsingAssign
 R1
@@ -50,10 +50,10 @@ r1
 !s85 0
 31
 R8
-Z11 !s107 examples.v|
 R9
-!i113 1
 R10
+!i113 1
+R11
 n@half@adder@using@assign
 vHalfAdderUsingGatesPrimitives
 R1
@@ -73,10 +73,10 @@ r1
 !s85 0
 31
 R8
-R11
 R9
-!i113 1
 R10
+!i113 1
+R11
 n@half@adder@using@gates@primitives
 vLatch
 R1
@@ -96,8 +96,31 @@ r1
 !s85 0
 31
 R8
-R11
 R9
-!i113 1
 R10
+!i113 1
+R11
 n@latch
+vRAM
+!s110 1677486115
+!i10b 1
+!s100 B;gfDXnoaKDMlJ1La7cCY3
+R2
+IY?zjiOBENzVUZZfK2h9PR0
+R3
+R0
+w1677485909
+8Memories.v
+FMemories.v
+!i122 13
+L0 1 29
+R7
+r1
+!s85 0
+31
+!s108 1677486115.000000
+!s107 Memories.v|
+!s90 -reportprogress|300|Memories.v|
+!i113 1
+R11
+n@r@a@m
