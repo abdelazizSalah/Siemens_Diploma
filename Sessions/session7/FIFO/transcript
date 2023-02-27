@@ -1,0 +1,382 @@
+# Reading pref.tcl
+# OpenFile C:/GitHub/Siemens_Diploma/Sessions/session7/FIFO/Fifo.v
+do fifoScript.tcl
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:42:07 on Feb 27,2023
+# vlog -reportprogress 300 Fifo.v 
+# ** Error: (vlog-66) Execution of vlib.exe failed. Please check the error log for more details.
+# End time: 12:42:07 on Feb 27,2023, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./fifoScript.tcl line 1
+# C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog Fifo.v"
+vlib work
+vlog -reportprogress 300 -work work C:/GitHub/Siemens_Diploma/Sessions/session7/FIFO/Fifo.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:42:22 on Feb 27,2023
+# vlog -reportprogress 300 -work work C:/GitHub/Siemens_Diploma/Sessions/session7/FIFO/Fifo.v 
+# -- Compiling module FIFO
+# ** Error: C:/GitHub/Siemens_Diploma/Sessions/session7/FIFO/Fifo.v(37): (vlog-2730) Undefined variable: 'dataOut'.
+# ** Error: C:/GitHub/Siemens_Diploma/Sessions/session7/FIFO/Fifo.v(3): (vlog-2730) Undefined variable: 'write_enable'.
+# ** Error: C:/GitHub/Siemens_Diploma/Sessions/session7/FIFO/Fifo.v(3): (vlog-13294) Identifier must be declared with a port mode: write_enable.
+# ** Error: C:/GitHub/Siemens_Diploma/Sessions/session7/FIFO/Fifo.v(4): (vlog-2730) Undefined variable: 'read_enable'.
+# ** Error: C:/GitHub/Siemens_Diploma/Sessions/session7/FIFO/Fifo.v(4): (vlog-13294) Identifier must be declared with a port mode: read_enable.
+# End time: 12:42:22 on Feb 27,2023, Elapsed time: 0:00:00
+# Errors: 5, Warnings: 0
+do fifoScript.tcl
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:43:22 on Feb 27,2023
+# vlog -reportprogress 300 Fifo.v 
+# -- Compiling module FIFO
+# 
+# Top level modules:
+# 	FIFO
+# End time: 12:43:22 on Feb 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim FIFO 
+# Start time: 12:43:22 on Feb 27,2023
+# Loading work.FIFO
+force -freeze sim:/FIFO/clk_write 1 0, 0 {50 ps} -r 100
+force -freeze sim:/FIFO/clk_read 1 0, 0 {50 ps} -r 100
+force readAddressPointer 0
+force writeAddressPointer 0
+run
+force ReadingIsFaster 0
+run
+quit -sim
+# End time: 12:58:30 on Feb 27,2023, Elapsed time: 0:15:08
+# Errors: 0, Warnings: 0
+do fifoScript.tcl
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:58:42 on Feb 27,2023
+# vlog -reportprogress 300 Fifo.v 
+# -- Compiling module FIFO
+# 
+# Top level modules:
+# 	FIFO
+# End time: 12:58:42 on Feb 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim FIFO 
+# Start time: 12:58:42 on Feb 27,2023
+# Loading work.FIFO
+# Invalid binary digit: 3.
+# ** UI-Msg: (vsim-4011) Invalid force value: 31.
+# Error in macro ./fifoScript.tcl line 6
+# Invalid binary digit: 3.
+# ** UI-Msg: (vsim-4011) Invalid force value: 31.
+# 
+#     while executing
+# "force readAddressPointer 31"
+do fifoScript.tcl
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 12:58:58 on Feb 27,2023
+# vlog -reportprogress 300 Fifo.v 
+# -- Compiling module FIFO
+# 
+# Top level modules:
+# 	FIFO
+# End time: 12:58:58 on Feb 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 12:59:00 on Feb 27,2023, Elapsed time: 0:00:18
+# Errors: 0, Warnings: 0
+# vsim FIFO 
+# Start time: 12:59:00 on Feb 27,2023
+# Loading work.FIFO
+# Invalid binary digit: 3.
+# ** UI-Msg: (vsim-4011) Invalid force value: 31.
+# Error in macro ./fifoScript.tcl line 6
+# Invalid binary digit: 3.
+# ** UI-Msg: (vsim-4011) Invalid force value: 31.
+# 
+#     while executing
+# "force readAddressPointer 31"
+force data_in 01010101
+run
+force ReadingIsFaster 0
+run
+quit -sim
+# End time: 13:00:31 on Feb 27,2023, Elapsed time: 0:01:31
+# Errors: 0, Warnings: 0
+do fifoScript.tcl
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:05:32 on Feb 27,2023
+# vlog -reportprogress 300 Fifo.v 
+# -- Compiling module FIFO
+# 
+# Top level modules:
+# 	FIFO
+# End time: 13:05:32 on Feb 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim FIFO 
+# Start time: 13:05:32 on Feb 27,2023
+# Loading work.FIFO
+# ** UI-Msg: (vish-4001) Incorrect number of arguments.
+# Usage: force <object_name> {<value> [[@]<time_info>][, <value> [[@]<time_info>]...} [-freeze | -drive | -deposit] [-cancel [@]<time_info>] [-repeat [@]<time_info>]
+# Error in macro ./fifoScript.tcl line 6
+# ** UI-Msg: (vish-4001) Incorrect number of arguments.
+# Usage: force <object_name> {<value> [[@]<time_info>][, <value> [[@]<time_info>]...} [-freeze | -drive | -deposit] [-cancel [@]<time_info>] [-repeat [@]<time_info>]
+#     while executing
+# "force readAddressPointer "
+do fifoScript.tcl
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:05:57 on Feb 27,2023
+# vlog -reportprogress 300 Fifo.v 
+# -- Compiling module FIFO
+# 
+# Top level modules:
+# 	FIFO
+# End time: 13:05:57 on Feb 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 13:05:59 on Feb 27,2023, Elapsed time: 0:00:27
+# Errors: 0, Warnings: 0
+# vsim FIFO 
+# Start time: 13:05:59 on Feb 27,2023
+# Loading work.FIFO
+# Invalid binary digit: 3.
+# ** UI-Msg: (vsim-4011) Invalid force value: 31.
+# Error in macro ./fifoScript.tcl line 6
+# Invalid binary digit: 3.
+# ** UI-Msg: (vsim-4011) Invalid force value: 31.
+# 
+#     while executing
+# "force readAddressPointer 31"
+do fifoScript.tcl
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:06:13 on Feb 27,2023
+# vlog -reportprogress 300 Fifo.v 
+# -- Compiling module FIFO
+# 
+# Top level modules:
+# 	FIFO
+# End time: 13:06:13 on Feb 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 13:06:15 on Feb 27,2023, Elapsed time: 0:00:16
+# Errors: 0, Warnings: 0
+# vsim FIFO 
+# Start time: 13:06:15 on Feb 27,2023
+# Loading work.FIFO
+run
+do fifoScript.tcl
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:07:01 on Feb 27,2023
+# vlog -reportprogress 300 Fifo.v 
+# -- Compiling module FIFO
+# 
+# Top level modules:
+# 	FIFO
+# End time: 13:07:01 on Feb 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 13:07:03 on Feb 27,2023, Elapsed time: 0:00:48
+# Errors: 0, Warnings: 0
+# vsim FIFO 
+# Start time: 13:07:03 on Feb 27,2023
+# Loading work.FIFO
+run
+quit -sim
+# End time: 13:09:36 on Feb 27,2023, Elapsed time: 0:02:33
+# Errors: 0, Warnings: 0
+do fifoScript.tcl
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:10:01 on Feb 27,2023
+# vlog -reportprogress 300 Fifo.v 
+# -- Compiling module FIFO
+# 
+# Top level modules:
+# 	FIFO
+# End time: 13:10:01 on Feb 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim FIFO 
+# Start time: 13:10:01 on Feb 27,2023
+# Loading work.FIFO
+run
+do fifoScript.tcl
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:10:52 on Feb 27,2023
+# vlog -reportprogress 300 Fifo.v 
+# -- Compiling module FIFO
+# 
+# Top level modules:
+# 	FIFO
+# End time: 13:10:52 on Feb 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 13:10:54 on Feb 27,2023, Elapsed time: 0:00:53
+# Errors: 0, Warnings: 0
+# vsim FIFO 
+# Start time: 13:10:54 on Feb 27,2023
+# Loading work.FIFO
+quit -sim
+# End time: 13:13:17 on Feb 27,2023, Elapsed time: 0:02:23
+# Errors: 0, Warnings: 0
+do fifoScript.tcl
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:13:19 on Feb 27,2023
+# vlog -reportprogress 300 Fifo.v 
+# -- Compiling module FIFO
+# 
+# Top level modules:
+# 	FIFO
+# End time: 13:13:19 on Feb 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim FIFO 
+# Start time: 13:13:19 on Feb 27,2023
+# Loading work.FIFO
+run
+quit -sim
+# End time: 13:13:59 on Feb 27,2023, Elapsed time: 0:00:40
+# Errors: 0, Warnings: 0
+quit -sim
+do fifoScript.tcl
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:15:51 on Feb 27,2023
+# vlog -reportprogress 300 Fifo.v 
+# -- Compiling module FIFO
+# 
+# Top level modules:
+# 	FIFO
+# End time: 13:15:51 on Feb 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim FIFO 
+# Start time: 13:15:51 on Feb 27,2023
+# Loading work.FIFO
+run
+quit -sim
+# End time: 13:16:57 on Feb 27,2023, Elapsed time: 0:01:06
+# Errors: 0, Warnings: 0
+do fifoScript.tcl
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:17:46 on Feb 27,2023
+# vlog -reportprogress 300 Fifo.v 
+# -- Compiling module FIFO
+# 
+# Top level modules:
+# 	FIFO
+# End time: 13:17:46 on Feb 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim FIFO 
+# Start time: 13:17:46 on Feb 27,2023
+# Loading work.FIFO
+run
+do fifoScript.tcl
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:40:52 on Feb 27,2023
+# vlog -reportprogress 300 Fifo.v 
+# -- Compiling module FIFO
+# 
+# Top level modules:
+# 	FIFO
+# End time: 13:40:52 on Feb 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 13:40:54 on Feb 27,2023, Elapsed time: 0:23:08
+# Errors: 0, Warnings: 0
+# vsim FIFO 
+# Start time: 13:40:54 on Feb 27,2023
+# Loading work.FIFO
+quit -sim
+# End time: 13:41:04 on Feb 27,2023, Elapsed time: 0:00:10
+# Errors: 0, Warnings: 0
+do fifoScript.tcl
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:41:27 on Feb 27,2023
+# vlog -reportprogress 300 Fifo.v 
+# -- Compiling module FIFO
+# 
+# Top level modules:
+# 	FIFO
+# End time: 13:41:27 on Feb 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim FIFO 
+# Start time: 13:41:27 on Feb 27,2023
+# Loading work.FIFO
+force write_enable 0
+force read_enable 1
+run
+run
+quit -sim
+# End time: 13:43:46 on Feb 27,2023, Elapsed time: 0:02:19
+# Errors: 0, Warnings: 0
+do fifoScript.tcl
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:43:49 on Feb 27,2023
+# vlog -reportprogress 300 Fifo.v 
+# -- Compiling module FIFO
+# 
+# Top level modules:
+# 	FIFO
+# End time: 13:43:49 on Feb 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim FIFO 
+# Start time: 13:43:49 on Feb 27,2023
+# Loading work.FIFO
+run
+quit -sim
+# End time: 13:45:23 on Feb 27,2023, Elapsed time: 0:01:34
+# Errors: 0, Warnings: 0
+do fifoScript.tcl
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:45:26 on Feb 27,2023
+# vlog -reportprogress 300 Fifo.v 
+# -- Compiling module FIFO
+# 
+# Top level modules:
+# 	FIFO
+# End time: 13:45:26 on Feb 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim FIFO 
+# Start time: 13:45:26 on Feb 27,2023
+# Loading work.FIFO
+run
+do fifoScript.tcl
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:46:10 on Feb 27,2023
+# vlog -reportprogress 300 Fifo.v 
+# -- Compiling module FIFO
+# 
+# Top level modules:
+# 	FIFO
+# End time: 13:46:10 on Feb 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 13:46:12 on Feb 27,2023, Elapsed time: 0:00:46
+# Errors: 0, Warnings: 0
+# vsim FIFO 
+# Start time: 13:46:12 on Feb 27,2023
+# Loading work.FIFO
+run
+do fifoScript.tcl
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:49:16 on Feb 27,2023
+# vlog -reportprogress 300 Fifo.v 
+# -- Compiling module FIFO
+# 
+# Top level modules:
+# 	FIFO
+# End time: 13:49:16 on Feb 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 13:49:18 on Feb 27,2023, Elapsed time: 0:03:06
+# Errors: 0, Warnings: 0
+# vsim FIFO 
+# Start time: 13:49:18 on Feb 27,2023
+# Loading work.FIFO
+do fifoScript.tcl
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:50:00 on Feb 27,2023
+# vlog -reportprogress 300 Fifo.v 
+# -- Compiling module FIFO
+# 
+# Top level modules:
+# 	FIFO
+# End time: 13:50:00 on Feb 27,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 13:50:02 on Feb 27,2023, Elapsed time: 0:00:44
+# Errors: 0, Warnings: 0
+# vsim FIFO 
+# Start time: 13:50:02 on Feb 27,2023
+# Loading work.FIFO
+force read_enable 1
+force write_enable 0
+run
+run
+run
+# End time: 13:51:39 on Feb 27,2023, Elapsed time: 0:01:37
+# Errors: 0, Warnings: 0
