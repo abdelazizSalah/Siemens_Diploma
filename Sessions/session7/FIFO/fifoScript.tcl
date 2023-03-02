@@ -11,5 +11,14 @@ force rst 0
 force ReadingIsFaster 0
 force data_in 01011111
 force read_enable 0
-force write_enable 1
-run 
+force write_enable 1 
+for {set index 0} { $index < 34 } { incr index } {
+    run
+}
+
+force read_enable 1
+force write_enable 0 
+ 
+for {set index 0} { $index < 34 } { incr index } {
+    run
+}

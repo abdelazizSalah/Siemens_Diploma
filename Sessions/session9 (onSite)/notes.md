@@ -22,4 +22,8 @@
 * el mfrod lw 3auz tnzl el code bta3k 3la fpga, fe guide lazm temshy 3leh 34an tedmn eno yenzlk el shoghl bta3k aw ykhlek tshtghl 3la el 7agat el already mwgoda aslun 3la el chip, l2n lw ma mshetsh 3la el guide da, sa3tha hwa hynzlk l design 3la logic blocks, fa da bykbrlk el logic. 
 * kol vendor leh library guide. 
 * fe chips zy microchip msln, btnzl el FPGA bta3ha b static inputs, elly homa mynf34  enk t8yr el kema bt3thom, sawa2 kano logic 1 msln aw 0, el fekra en el 7agat el static de 7agat mynf34 tt8yr. 
-*  
+  
+## VTR
+* el bta3 da wazefto eno td5lo wasf le architecture enta 3auzo w hwa by3mlo modeling, kol el fekra enk btgrb afkar w btshof hal el fekra de kwysa wla la, fa hwa mgal researching kbeer gdn gdn.
+
+* 
