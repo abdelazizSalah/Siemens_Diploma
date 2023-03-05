@@ -64,30 +64,30 @@ initial begin
     #Time;
 
     if(data_out == 8'b10101010) begin
-        $display("Success! FIFO is reading the first word");
+        $display("Success! FIFO is reading the first byte");
     end else begin
-        $display("Failure!, FIFO is not reading the first word");
+        $display("Failure!, FIFO is not reading the first byte");
     end
     #Time;
     #Time;
     if(data_out == 8'b11110000) begin
-        $display("Success! FIFO is reading the second word");
+        $display("Success! FIFO is reading the second byte");
     end else begin
-        $display("Failure!, FIFO is not reading the second word");
+        $display("Failure!, FIFO is not reading the second byte");
     end
     #Time;
     #Time;
     if(data_out == 8'b00101001) begin
-        $display("Success! FIFO is reading the third word");
+        $display("Success! FIFO is reading the third byte");
     end else begin
-        $display("Failure!, FIFO is not reading the third word");
+        $display("Failure!, FIFO is not reading the third byte");
     end
     #Time;
     #Time;
     if(data_out == 8'b00100000) begin
-        $display("Success! FIFO is reading the fourth word");
+        $display("Success! FIFO is reading the fourth byte");
     end else begin
-        $display("Failure!, FIFO is not reading the fourth word");
+        $display("Failure!, FIFO is not reading the fourth byte");
     end
     #Time;
     #Time;

@@ -257,8 +257,11 @@ do TB.tcl
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: 20115  Hostname: ABDELAZIZPC  ProcessID: 15604
 #           Attempting to use alternate WLF file "./wlftr8916f".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftr8916f
+# **quit -sim
+# End time: 04:35:36 on Mar 05,2023, Elapsed time: 9:11:19
+# Errors: 0, Warnings: 0
+quit
+916f
 do TB.tcl
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
 # Start time: 03:14:54 on Mar 05,2023
@@ -1805,3 +1808,38 @@ do fifoScript.tcl
 quit -sim
 # End time: 04:30:15 on Mar 05,2023, Elapsed time: 0:00:41
 # Errors: 0, Warnings: 2
+do TB.tcl
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 04:32:36 on Mar 05,2023
+# vlog -reportprogress 300 Fifotb.v 
+# -- Compiling module FifoTB
+# 
+# Top level modules:
+# 	FifoTB
+# End time: 04:32:36 on Mar 05,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 04:32:36 on Mar 05,2023
+# vlog -reportprogress 300 Fifo.v 
+# -- Compiling module FIFO
+# 
+# Top level modules:
+# 	FIFO
+# End time: 04:32:36 on Mar 05,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim FifoTB 
+# Start time: 04:32:36 on Mar 05,2023
+# Loading work.FifoTB
+# Loading work.FIFO
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: 20115  Hostname: ABDELAZIZPC  ProcessID: 15604
+#           Attempting to use alternate WLF file "./wlftcvehzd".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftcvehzd
+# Success! FIFO is empty
+# Success! FIFO is reading the first byte
+# Success! FIFO is reading the second byte
+# Success! FIFO is reading the third byte
+# Success! FIFO is reading the fourth byte
+# Success! FIFO is full
+# Success! FIFO is empty
