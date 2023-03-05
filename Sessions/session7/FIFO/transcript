@@ -1843,3 +1843,5 @@ do TB.tcl
 # Success! FIFO is reading the fourth byte
 # Success! FIFO is full
 # Success! FIFO is empty
+# End time: 05:00:19 on Mar 05,2023, Elapsed time: 0:27:43
+# Errors: 0, Warnings: 2
