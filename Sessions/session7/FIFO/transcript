@@ -1770,3 +1770,38 @@ do TB.tcl
 # Start time: 04:20:24 on Mar 05,2023
 # Loading work.FifoTB
 # Loading work.FIFO
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: 20115  Hostname: ABDELAZIZPC  ProcessID: 15604
+#           Attempting to use alternate WLF file "./wlftkv3z3b".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftkv3z3b
+# Success! FIFO is empty
+# Success! FIFO is reading the first word
+# Success! FIFO is reading the second word
+# Success! FIFO is reading the third word
+# Success! FIFO is reading the fourth word
+# Success! FIFO is full
+# Success! FIFO is empty
+do fifoScript.tcl
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 04:29:32 on Mar 05,2023
+# vlog -reportprogress 300 Fifo.v 
+# -- Compiling module FIFO
+# 
+# Top level modules:
+# 	FIFO
+# End time: 04:29:32 on Mar 05,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 04:29:34 on Mar 05,2023, Elapsed time: 0:09:10
+# Errors: 0, Warnings: 2
+# vsim FIFO 
+# Start time: 04:29:34 on Mar 05,2023
+# Loading work.FIFO
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: 20115  Hostname: ABDELAZIZPC  ProcessID: 15604
+#           Attempting to use alternate WLF file "./wlft8zgc6f".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft8zgc6f
+quit -sim
+# End time: 04:30:15 on Mar 05,2023, Elapsed time: 0:00:41
+# Errors: 0, Warnings: 2

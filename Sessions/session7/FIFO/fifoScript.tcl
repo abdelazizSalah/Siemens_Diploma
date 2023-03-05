@@ -1,4 +1,3 @@
-
 vlog Fifo.v
 vsim FIFO
 add wave *
@@ -28,5 +27,4 @@ for {set index 0} { $index < 34 } { incr index } {
     if { $index == 1 } {
         force ReadingIsFaster 1
     }
-    
 }

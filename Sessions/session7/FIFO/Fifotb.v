@@ -1,3 +1,6 @@
+/// @Author : Abdelaziz Salah Mohammed Abdou
+/// This file contains the testbench for the FIFO module.
+
 module FifoTB () ;
 localparam  Time = 100;
 reg clk_read, clk_write, rst, read_enable, write_enable;
@@ -117,7 +120,6 @@ initial begin
         $display("Failure!, FIFO is not empty");
     end
 end
-
 
 // block for toggeling the clock
 initial begin
