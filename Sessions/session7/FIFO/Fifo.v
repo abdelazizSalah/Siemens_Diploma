@@ -1,26 +1,47 @@
-// module FIFO #(parameter ADDR_WIDTH = 5, DATA_WIDTH = 8)(data_out, data_in, clk_read, clk_write, enqueue, dequeue); // that what should be delivered
+/// @Author: Abdelaziz Salah Mohammed Abdou
+/// This File contains the implementation of the FIFO module, which is a dual port memory with a read and write pointers
+/// and a flag which indicates if the FIFO is full or empty.
+/// The module has 7 inputs, 3 outputs and 2 parameters.
+/// The inputs are:
+/// 1- data_in: this is the data which will be written to the FIFO.
+/// 2- clk_write: this is the clock which will be used to write to the FIFO.
+/// 3- clk_read: this is the clock which will be used to read from the FIFO.
+/// 4- read_enable: this is a flag which indicates if the read operation is enabled or not.
+/// 5- write_enable: this is a flag which indicates if the write operation is enabled or not.
+/// 6- rst: this is a flag which indicates if the module is in reset state or not.
+/// 7- ReadingIsFaster: this is a flag which indicates if the reading clock is faster than the writing clock or not.
+/// The outputs are:
+/// 1- data_out: this is the data which will be read from the FIFO.
+/// 2- empty_flag: this is a flag which indicates if the FIFO is empty or not.
+/// 3- full_flag: this is a flag which indicates if the FIFO is full or not.
+/// The parameters are:
+/// 1- ADDR_WIDTH: this is the width of the address bus.
+/// 2- DATA_WIDTH: this is the width of the data bus.
 module FIFO #(parameter ADDR_WIDTH = 5, DATA_WIDTH = 8)
                 (data_out, data_in, clk_read,
-                     clk_write, read_enable, write_enable, rst ); // implementing my own logic
+                     clk_write, read_enable, write_enable,
+                          rst, empty_flag, full_flag,ReadingIsFaster); // implementing my own logic
 // defining the inputs 
 input [DATA_WIDTH -1:0] data_in;
 input clk_write, clk_read; 
 input read_enable, write_enable, rst; 
 
+/// this is a flag which indicates which frequency is higher, reading or writing.
+input ReadingIsFaster;  // there should be a module which evaluates which clock has higher frequency and depending on that it should pass the result to this flag.
+
 // defining the outputs 
 output reg [DATA_WIDTH -1 : 0] data_out;
+output reg empty_flag, full_flag; 
 
 // defining utilities 
+
 // 31 because we have 5 bits for address, so we can access up to 2^5, 
 // memory size = 32 * 8 = 256 bits. 
-reg empty_flag, full_flag; 
-reg [ DATA_WIDTH-1:0] dualPortMem [2**ADDR_WIDTH-1 : 0]; 
+reg [DATA_WIDTH-1:0] dualPortMem [2**ADDR_WIDTH-1 : 0]; 
 reg [ADDR_WIDTH-1 :0] readAddressPointer; 
 reg [ADDR_WIDTH-1 :0] writeAddressPointer;
-/// this is a flag which indicates which frequency is higher, reading or writing.
-reg ReadingIsFaster;  // there should be a module which evaluates which clock has higher frequency and depending on that it should pass the result to this flag.
 wire [DATA_WIDTH -1 : 0] w_data_out;
-reg [DATA_WIDTH -1 : 0] prev_data_in;
+reg  [DATA_WIDTH -1 : 0] prev_data_in;
 
 assign w_data_out = data_out;
 /// writing the FIFO algorithm
@@ -31,6 +52,7 @@ always @ (posedge clk_read, rst) begin
     end else begin 
         if(empty_flag != 1'b1 && read_enable == 1'b1) begin 
             // increment the read address, and applying the circular behaviour. 
+            full_flag = 1'b0;
             if(readAddressPointer != 5'b11111) begin
                 readAddressPointer <= readAddressPointer + 1;
             end else begin 
@@ -55,7 +77,8 @@ always @ (posedge clk_write, rst) begin
         prev_data_in <= dualPortMem[writeAddressPointer]; 
         if(full_flag != 1'b1 && write_enable == 1'b1) begin 
             // put the data on the dataout
-            dualPortMem[writeAddressPointer] <= data_in; 
+        empty_flag = 1'b0;
+        dualPortMem[writeAddressPointer] = data_in; 
 
             // increment the read address, and applying the circular behaviour. 
             if(writeAddressPointer != 5'b11111) begin
@@ -73,22 +96,24 @@ end
 
 // implementing the algorithm of changing the flags, combinational logic 
 always @(ReadingIsFaster,readAddressPointer, writeAddressPointer) begin 
-    // if rate of reading is faster than that of writing 
     // setting initial values to avoid unintended latches. 
     if(rst == 1'b1) begin 
         empty_flag =0; 
         full_flag =0; 
-    end else begin
-        empty_flag =0; 
-        full_flag =0; 
+    end else begin 
+        // if rate of reading is faster than that of writing 
         if(ReadingIsFaster == 1'b1) begin 
-            if(readAddressPointer == writeAddressPointer) begin
+            if(readAddressPointer == writeAddressPointer && !full_flag) begin
                 empty_flag = 1; 
+            end else begin 
+                empty_flag = 0; 
             end
         end else begin 
-            if(readAddressPointer == writeAddressPointer) begin
+            if(readAddressPointer == writeAddressPointer && !empty_flag) begin
                 full_flag = 1; 
-            end
+            end else begin
+                full_flag = 0;
+            end 
         end
     end
 end

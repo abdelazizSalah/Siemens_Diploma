@@ -10,25 +10,48 @@ z2
 cModel Technology
 Z0 dC:/GitHub/Siemens_Diploma/Sessions/session7/FIFO
 vFIFO
-!s110 1677740348
+Z1 !s110 1677982822
 !i10b 1
-!s100 z`glbnCe<3:;=GIZRj1T30
-!s11b Dg1SIo80bB@j0V0VzS_@n1
-I[8RE_QNc@Sl0_IB1[jX2E3
-VDg1SIo80bB@j0V0VzS_@n1
+!s100 EXI8OB1j1GS@X1@^>1Zj^1
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I82DWi=G<DHB]cTYKZ6PP80
+Z3 VDg1SIo80bB@j0V0VzS_@n1
 R0
-w1677740333
+w1677982818
 8Fifo.v
 FFifo.v
-!i122 25
-L0 2 94
-OV;L;2020.1;71
+!i122 114
+L0 2 99
+Z4 OV;L;2020.1;71
 r1
 !s85 0
 31
-!s108 1677740348.000000
+Z5 !s108 1677982822.000000
 !s107 Fifo.v|
 !s90 -reportprogress|300|Fifo.v|
 !i113 1
-tCvgOpt 0
+Z6 tCvgOpt 0
 n@f@i@f@o
+vFifoTB
+R1
+!i10b 1
+!s100 DH:<2QBb5Elko62X5Y5643
+R2
+I=<FB4m_F;3`A2KNMbaL;c0
+R3
+R0
+w1677982728
+8Fifotb.v
+FFifotb.v
+!i122 113
+L0 1 133
+R4
+r1
+!s85 0
+31
+R5
+!s107 Fifotb.v|
+!s90 -reportprogress|300|Fifotb.v|
+!i113 1
+R6
+n@fifo@t@b

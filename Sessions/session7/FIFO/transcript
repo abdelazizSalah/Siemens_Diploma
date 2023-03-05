@@ -1,186 +1,1772 @@
 # Reading pref.tcl
-# OpenFile C:/GitHub/Siemens_Diploma/Sessions/session7/FIFO/Fifo.v
-do fifoScript.tcl
+# OpenFile C:/GitHub/Siemens_Diploma/Sessions/session7/FIFO/Fifotb.v
+vlog Fifotb.v
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:21:13 on Mar 01,2023
+# Start time: 03:08:39 on Mar 05,2023
+# vlog -reportprogress 300 Fifotb.v 
+# -- Compiling module FifoTB
+# 
+# Top level modules:
+# 	FifoTB
+# End time: 03:08:39 on Mar 05,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim FifoTB
+# vsim FifoTB 
+# Start time: 03:08:49 on Mar 05,2023
+# Loading work.FifoTB
+# ** Error: (vsim-3033) Instantiation of 'Fifo' failed. The design unit was not found.
+#    Time: 0 ps  Iteration: 0  Instance: /FifoTB File: Fifotb.v Line: 7
+#         Searched libraries:
+#             C:/GitHub/Siemens_Diploma/Sessions/session7/FIFO/work
+# Error loading design
+# End time: 03:08:50 on Mar 05,2023, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 0
+vlog Fifotb.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 03:09:07 on Mar 05,2023
+# vlog -reportprogress 300 Fifotb.v 
+# -- Compiling module FifoTB
+# 
+# Top level modules:
+# 	FifoTB
+# End time: 03:09:07 on Mar 05,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim FifoTB
+# vsim FifoTB 
+# Start time: 03:09:09 on Mar 05,2023
+# Loading work.FifoTB
+# Loading work.FIFO
+# ** Error (suppressible): (vsim-3053) Illegal output or inout port connection for port 'data_out'.
+#    Time: 0 ps  Iteration: 0  Instance: /FifoTB/fifoUUT File: Fifotb.v Line: 7
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (1) for port 'data_out'. The port definition is at: Fifo.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /FifoTB/fifoUUT File: Fifotb.v Line: 7
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (1) for port 'data_in'. The port definition is at: Fifo.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /FifoTB/fifoUUT File: Fifotb.v Line: 7
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (8) for port 'write_enable'. The port definition is at: Fifo.v(4).
+#    Time: 0 ps  Iteration: 0  Instance: /FifoTB/fifoUUT File: Fifotb.v Line: 7
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (8) for port 'rst'. The port definition is at: Fifo.v(4).
+#    Time: 0 ps  Iteration: 0  Instance: /FifoTB/fifoUUT File: Fifotb.v Line: 7
+# Error loading design
+# End time: 03:09:09 on Mar 05,2023, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 4
+do tb.tcl
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 03:09:54 on Mar 05,2023
+# vlog -reportprogress 300 Fifotb.v 
+# -- Compiling module FifoTB
+# 
+# Top level modules:
+# 	FifoTB
+# End time: 03:09:54 on Mar 05,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim FifoTB 
+# Start time: 03:09:54 on Mar 05,2023
+# Loading work.FifoTB
+# Loading work.FIFO
+# ** Error (suppressible): (vsim-3053) Illegal output or inout port connection for port 'data_out'.
+#    Time: 0 ps  Iteration: 0  Instance: /FifoTB/fifoUUT File: Fifotb.v Line: 7
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (1) for port 'data_out'. The port definition is at: Fifo.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /FifoTB/fifoUUT File: Fifotb.v Line: 7
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (1) for port 'data_in'. The port definition is at: Fifo.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /FifoTB/fifoUUT File: Fifotb.v Line: 7
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (8) for port 'write_enable'. The port definition is at: Fifo.v(4).
+#    Time: 0 ps  Iteration: 0  Instance: /FifoTB/fifoUUT File: Fifotb.v Line: 7
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (8) for port 'rst'. The port definition is at: Fifo.v(4).
+#    Time: 0 ps  Iteration: 0  Instance: /FifoTB/fifoUUT File: Fifotb.v Line: 7
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./tb.tcl PAUSED at line 2
+do TB.tcl
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 03:10:04 on Mar 05,2023
+# vlog -reportprogress 300 Fifotb.v 
+# -- Compiling module FifoTB
+# 
+# Top level modules:
+# 	FifoTB
+# End time: 03:10:04 on Mar 05,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim FifoTB 
+# Start time: 03:09:54 on Mar 05,2023
+# Loading work.FifoTB
+# Loading work.FIFO
+# ** Error (suppressible): (vsim-3053) Illegal output or inout port connection for port 'data_out'.
+#    Time: 0 ps  Iteration: 0  Instance: /FifoTB/fifoUUT File: Fifotb.v Line: 7
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (1) for port 'data_out'. The port definition is at: Fifo.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /FifoTB/fifoUUT File: Fifotb.v Line: 7
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (1) for port 'data_in'. The port definition is at: Fifo.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /FifoTB/fifoUUT File: Fifotb.v Line: 7
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (8) for port 'write_enable'. The port definition is at: Fifo.v(4).
+#    Time: 0 ps  Iteration: 0  Instance: /FifoTB/fifoUUT File: Fifotb.v Line: 7
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (8) for port 'rst'. The port definition is at: Fifo.v(4).
+#    Time: 0 ps  Iteration: 0  Instance: /FifoTB/fifoUUT File: Fifotb.v Line: 7
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./TB.tcl PAUSED at line 2
+do TB.tcl
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 03:10:55 on Mar 05,2023
+# vlog -reportprogress 300 Fifotb.v 
+# -- Compiling module FifoTB
+# ** Error: Fifotb.v(25): (vlog-2110) Illegal reference to net "data_in".
+# ** Error: Fifotb.v(27): (vlog-2110) Illegal reference to net "data_in".
+# ** Error: Fifotb.v(30): (vlog-2110) Illegal reference to net "data_in".
+# ** Error: Fifotb.v(32): (vlog-2110) Illegal reference to net "data_in".
+# ** Error: Fifotb.v(67): (vlog-2110) Illegal reference to net "data_in".
+# End time: 03:10:55 on Mar 05,2023, Elapsed time: 0:00:00
+# Errors: 5, Warnings: 0
+# ** Error: C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./TB.tcl line 1
+# C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog Fifotb.v"
+do TB.tcl
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 03:11:11 on Mar 05,2023
+# vlog -reportprogress 300 Fifotb.v 
+# -- Compiling module FifoTB
+# 
+# Top level modules:
+# 	FifoTB
+# End time: 03:11:11 on Mar 05,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim FifoTB 
+# Start time: 03:09:54 on Mar 05,2023
+# Loading work.FifoTB
+# Loading work.FIFO
+# ** Error (suppressible): (vsim-3053) Illegal output or inout port connection for port 'data_out'.
+#    Time: 0 ps  Iteration: 0  Instance: /FifoTB/fifoUUT File: Fifotb.v Line: 7
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (1) for port 'data_out'. The port definition is at: Fifo.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /FifoTB/fifoUUT File: Fifotb.v Line: 7
+# ** Warning: (vsim-3015) [PCDPC] - Port size (8) does not match connection size (1) for port 'data_in'. The port definition is at: Fifo.v(3).
+#    Time: 0 ps  Iteration: 0  Instance: /FifoTB/fifoUUT File: Fifotb.v Line: 7
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (8) for port 'write_enable'. The port definition is at: Fifo.v(4).
+#    Time: 0 ps  Iteration: 0  Instance: /FifoTB/fifoUUT File: Fifotb.v Line: 7
+# ** Warning: (vsim-3015) [PCDPC] - Port size (1) does not match connection size (8) for port 'rst'. The port definition is at: Fifo.v(4).
+#    Time: 0 ps  Iteration: 0  Instance: /FifoTB/fifoUUT File: Fifotb.v Line: 7
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./TB.tcl PAUSED at line 2
+do TB.tcl
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 03:12:12 on Mar 05,2023
+# vlog -reportprogress 300 Fifotb.v 
+# -- Compiling module FifoTB
+# 
+# Top level modules:
+# 	FifoTB
+# End time: 03:12:12 on Mar 05,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim FifoTB 
+# Start time: 03:09:54 on Mar 05,2023
+# Loading work.FifoTB
+# Loading work.FIFO
+# ** Error (suppressible): (vsim-3389) Port 'full_flag' not found in the connected module (6th connection).
+#    Time: 0 ps  Iteration: 0  Instance: /FifoTB/fifoUUT File: Fifotb.v Line: 7
+# ** Error (suppressible): (vsim-3389) Port 'empty_flag' not found in the connected module (7th connection).
+#    Time: 0 ps  Iteration: 0  Instance: /FifoTB/fifoUUT File: Fifotb.v Line: 7
+# ** Error (suppressible): (vsim-3389) Port 'ReadingIsFaster' not found in the connected module (8th connection).
+#    Time: 0 ps  Iteration: 0  Instance: /FifoTB/fifoUUT File: Fifotb.v Line: 7
+# ** Error (suppressible): (vsim-3053) Illegal output or inout port connection for port 'data_out'.
+#    Time: 0 ps  Iteration: 0  Instance: /FifoTB/fifoUUT File: Fifotb.v Line: 7
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./TB.tcl PAUSED at line 2
+do TB.tcl
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 03:13:07 on Mar 05,2023
+# vlog -reportprogress 300 Fifotb.v 
+# -- Compiling module FifoTB
+# 
+# Top level modules:
+# 	FifoTB
+# End time: 03:13:07 on Mar 05,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 03:13:07 on Mar 05,2023
+# vlog -reportprogress 300 Fifo.v 
+# -- Compiling module FIFO
+# ** Error: Fifo.v(9): Port mode is incompatible with declaration: ReadingIsFaster
+# End time: 03:13:08 on Mar 05,2023, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 0
+# ** Error: C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./TB.tcl line 2
+# C:/intelFPGA/20.1/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog Fifo.v"
+do TB.tcl
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 03:13:30 on Mar 05,2023
+# vlog -reportprogress 300 Fifotb.v 
+# -- Compiling module FifoTB
+# 
+# Top level modules:
+# 	FifoTB
+# End time: 03:13:30 on Mar 05,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 03:13:30 on Mar 05,2023
 # vlog -reportprogress 300 Fifo.v 
 # -- Compiling module FIFO
 # 
 # Top level modules:
 # 	FIFO
-# End time: 23:21:13 on Mar 01,2023, Elapsed time: 0:00:00
+# End time: 03:13:30 on Mar 05,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vsim FIFO 
-# Start time: 23:21:14 on Mar 01,2023
+# vsim FifoTB 
+# Start time: 03:09:54 on Mar 05,2023
+# Loading work.FifoTB
 # Loading work.FIFO
+# ** Error (suppressible): (vsim-3053) Illegal output or inout port connection for port 'full_flag'.
+#    Time: 0 ps  Iteration: 0  Instance: /FifoTB/fifoUUT File: Fifotb.v Line: 7
+# ** Error (suppressible): (vsim-3053) Illegal output or inout port connection for port 'empty_flag'.
+#    Time: 0 ps  Iteration: 0  Instance: /FifoTB/fifoUUT File: Fifotb.v Line: 7
+# ** Error (suppressible): (vsim-3053) Illegal output or inout port connection for port 'data_out'.
+#    Time: 0 ps  Iteration: 0  Instance: /FifoTB/fifoUUT File: Fifotb.v Line: 7
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./TB.tcl PAUSED at line 3
+do TB.tcl
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 03:14:35 on Mar 05,2023
+# vlog -reportprogress 300 Fifotb.v 
+# -- Compiling module FifoTB
+# 
+# Top level modules:
+# 	FifoTB
+# End time: 03:14:36 on Mar 05,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 03:14:36 on Mar 05,2023
+# vlog -reportprogress 300 Fifo.v 
+# -- Compiling module FIFO
+# 
+# Top level modules:
+# 	FIFO
+# End time: 03:14:36 on Mar 05,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim FifoTB 
+# Start time: 03:09:54 on Mar 05,2023
+# Loading work.FifoTB
+# Loading work.FIFO
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: 20115  Hostname: ABDELAZIZPC  ProcessID: 15604
+#           Attempting to use alternate WLF file "./wlftr8916f".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftr8916f
+do TB.tcl
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 03:14:54 on Mar 05,2023
+# vlog -reportprogress 300 Fifotb.v 
+# -- Compiling module FifoTB
+# 
+# Top level modules:
+# 	FifoTB
+# End time: 03:14:54 on Mar 05,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 03:14:54 on Mar 05,2023
+# vlog -reportprogress 300 Fifo.v 
+# -- Compiling module FIFO
+# 
+# Top level modules:
+# 	FIFO
+# End time: 03:14:54 on Mar 05,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 03:14:58 on Mar 05,2023, Elapsed time: 0:05:04
+# Errors: 12, Warnings: 14
+# vsim FifoTB 
+# Start time: 03:14:58 on Mar 05,2023
+# Loading work.FifoTB
+# Loading work.FIFO
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: 20115  Hostname: ABDELAZIZPC  ProcessID: 15604
+#           Attempting to use alternate WLF file "./wlftra21ae".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftra21ae
+# A time value could not be extracted from the current line
+clear
+# invalid command name "clear"
 quit -sim
-# End time: 23:22:54 on Mar 01,2023, Elapsed time: 0:01:40
-# Errors: 0, Warnings: 0
-do fifoScript.tcl
+# End time: 03:15:35 on Mar 05,2023, Elapsed time: 0:00:37
+# Errors: 0, Warnings: 2
+do TB.tcl
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 23:34:42 on Mar 01,2023
+# Start time: 03:15:48 on Mar 05,2023
+# vlog -reportprogress 300 Fifotb.v 
+# -- Compiling module FifoTB
+# 
+# Top level modules:
+# 	FifoTB
+# End time: 03:15:48 on Mar 05,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 03:15:48 on Mar 05,2023
 # vlog -reportprogress 300 Fifo.v 
 # -- Compiling module FIFO
 # 
 # Top level modules:
 # 	FIFO
-# End time: 23:34:42 on Mar 01,2023, Elapsed time: 0:00:00
+# End time: 03:15:48 on Mar 05,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vsim FIFO 
-# Start time: 23:34:42 on Mar 01,2023
+# vsim FifoTB 
+# Start time: 03:15:48 on Mar 05,2023
+# Loading work.FifoTB
 # Loading work.FIFO
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: 20115  Hostname: ABDELAZIZPC  ProcessID: 15604
+#           Attempting to use alternate WLF file "./wlftrdzwbq".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftrdzwbq
+run
+# Failure!, FIFO is not empty
+quit -sim
+# End time: 03:16:29 on Mar 05,2023, Elapsed time: 0:00:41
+# Errors: 0, Warnings: 2
+do TB.tcl
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 03:16:50 on Mar 05,2023
+# vlog -reportprogress 300 Fifotb.v 
+# -- Compiling module FifoTB
+# 
+# Top level modules:
+# 	FifoTB
+# End time: 03:16:50 on Mar 05,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 03:16:50 on Mar 05,2023
+# vlog -reportprogress 300 Fifo.v 
+# -- Compiling module FIFO
+# 
+# Top level modules:
+# 	FIFO
+# End time: 03:16:50 on Mar 05,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim FifoTB 
+# Start time: 03:16:51 on Mar 05,2023
+# Loading work.FifoTB
+# Loading work.FIFO
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: 20115  Hostname: ABDELAZIZPC  ProcessID: 15604
+#           Attempting to use alternate WLF file "./wlftdsjeq9".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftdsjeq9
+run
+# Failure!, FIFO is not empty
+quit -sim
+# End time: 03:18:41 on Mar 05,2023, Elapsed time: 0:01:50
+# Errors: 0, Warnings: 2
+do TB.tcl
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 03:18:45 on Mar 05,2023
+# vlog -reportprogress 300 Fifotb.v 
+# -- Compiling module FifoTB
+# 
+# Top level modules:
+# 	FifoTB
+# End time: 03:18:45 on Mar 05,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 03:18:45 on Mar 05,2023
+# vlog -reportprogress 300 Fifo.v 
+# -- Compiling module FIFO
+# 
+# Top level modules:
+# 	FIFO
+# End time: 03:18:45 on Mar 05,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim FifoTB 
+# Start time: 03:18:45 on Mar 05,2023
+# Loading work.FifoTB
+# Loading work.FIFO
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: 20115  Hostname: ABDELAZIZPC  ProcessID: 15604
+#           Attempting to use alternate WLF file "./wlftyjh0y5".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftyjh0y5
+run
+# Failure!, FIFO is not empty
+do TB.tcl
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 03:19:41 on Mar 05,2023
+# vlog -reportprogress 300 Fifotb.v 
+# -- Compiling module FifoTB
+# 
+# Top level modules:
+# 	FifoTB
+# End time: 03:19:41 on Mar 05,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 03:19:41 on Mar 05,2023
+# vlog -reportprogress 300 Fifo.v 
+# -- Compiling module FIFO
+# 
+# Top level modules:
+# 	FIFO
+# End time: 03:19:41 on Mar 05,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 03:19:48 on Mar 05,2023, Elapsed time: 0:01:03
+# Errors: 0, Warnings: 2
+# vsim FifoTB 
+# Start time: 03:19:48 on Mar 05,2023
+# Loading work.FifoTB
+# Loading work.FIFO
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: 20115  Hostname: ABDELAZIZPC  ProcessID: 15604
+#           Attempting to use alternate WLF file "./wlftdvk3yk".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftdvk3yk
+run
+# Failure!, FIFO is not empty
+add wave readAddressPointer
+# ** UI-Msg: (vish-4014) No objects found matching 'readAddressPointer'.
+quit -sim
+# End time: 03:21:36 on Mar 05,2023, Elapsed time: 0:01:48
+# Errors: 0, Warnings: 2
+vlog Fifo.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 03:21:44 on Mar 05,2023
+# vlog -reportprogress 300 Fifo.v 
+# -- Compiling module FIFO
+# 
+# Top level modules:
+# 	FIFO
+# End time: 03:21:44 on Mar 05,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim FIFO
+# vsim FIFO 
+# Start time: 03:21:51 on Mar 05,2023
+# Loading work.FIFO
+add wave *
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: 20115  Hostname: ABDELAZIZPC  ProcessID: 15604
+#           Attempting to use alternate WLF file "./wlft1qqm73".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft1qqm73
+force ReadingIsFaster  1
 force read_enable 1
-force write_enable 1
 force write_enable 0
+force -freeze sim:/FIFO/clk_write 1 0, 0 {50 ps} -r 100
+force -freeze sim:/FIFO/clk_read 1 0, 0 {50 ps} -r 100
 run
+force rst 1
 run
+force rst 0
 run
-force write_enable 1
-force read_enable 0
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-
-run
-
-run
-
-run
-
-run
-run
-
-run
-
-
-force read_enable 0
-
-run
-
-run
-
-run
-run
-run
-run
-run
-
-run
-run
-run
-run
-run
-run
-run
-run
-run
-run
-# WARNING: No extended dataflow license exists
-quit -sim
-# End time: 08:48:06 on Mar 02,2023, Elapsed time: 9:13:24
-# Errors: 0, Warnings: 0
-do fifoScript.tcl
+do TB.tcl
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 08:49:11 on Mar 02,2023
+# Start time: 03:24:25 on Mar 05,2023
+# vlog -reportprogress 300 Fifotb.v 
+# -- Compiling module FifoTB
+# 
+# Top level modules:
+# 	FifoTB
+# End time: 03:24:25 on Mar 05,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 03:24:26 on Mar 05,2023
 # vlog -reportprogress 300 Fifo.v 
 # -- Compiling module FIFO
 # 
 # Top level modules:
 # 	FIFO
-# End time: 08:49:11 on Mar 02,2023, Elapsed time: 0:00:00
+# End time: 03:24:26 on Mar 05,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vsim FIFO 
-# Start time: 08:49:11 on Mar 02,2023
+# End time: 03:24:32 on Mar 05,2023, Elapsed time: 0:02:41
+# Errors: 0, Warnings: 2
+# vsim FifoTB 
+# Start time: 03:24:32 on Mar 05,2023
+# Loading work.FifoTB
 # Loading work.FIFO
-# ** Error: can't read "index": no such variable
-# Error in macro ./fifoScript.tcl line 15
-# can't read "index": no such variable
-#     while executing
-# "for \{set index 0} \{ $index < 34 } \{ incr index } \{"
-quit -sim
-# End time: 08:50:04 on Mar 02,2023, Elapsed time: 0:00:53
-# Errors: 1, Warnings: 0
-do fifoScript.tcl
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 08:50:09 on Mar 02,2023
-# vlog -reportprogress 300 Fifo.v 
-# -- Compiling module FIFO
-# 
-# Top level modules:
-# 	FIFO
-# End time: 08:50:09 on Mar 02,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vsim FIFO 
-# Start time: 08:50:09 on Mar 02,2023
-# Loading work.FIFO
-# ** Error: missing close-brace
-# Error in macro ./fifoScript.tcl line 15
-# missing close-brace
-#     while executing
-# "{"
-#     ("for" body line 1)
-#     invoked from within
-# "for {set index 0} { $index < 34 } { incr index } \{"
-do fifoScript.tcl
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 08:51:56 on Mar 02,2023
-# vlog -reportprogress 300 Fifo.v 
-# -- Compiling module FIFO
-# 
-# Top level modules:
-# 	FIFO
-# End time: 08:51:56 on Mar 02,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# End time: 08:52:00 on Mar 02,2023, Elapsed time: 0:01:51
-# Errors: 1, Warnings: 0
-# vsim FIFO 
-# Start time: 08:52:00 on Mar 02,2023
-# Loading work.FIFO
-do fifoScript.tcl
-# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 08:53:56 on Mar 02,2023
-# vlog -reportprogress 300 Fifo.v 
-# -- Compiling module FIFO
-# 
-# Top level modules:
-# 	FIFO
-# End time: 08:53:56 on Mar 02,2023, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# End time: 08:54:00 on Mar 02,2023, Elapsed time: 0:02:00
-# Errors: 0, Warnings: 0
-# vsim FIFO 
-# Start time: 08:54:00 on Mar 02,2023
-# Loading work.FIFO
-urn
-# invalid command name "urn"
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: 20115  Hostname: ABDELAZIZPC  ProcessID: 15604
+#           Attempting to use alternate WLF file "./wlft51h0z5".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft51h0z5
+run
+# Success! FIFO is empty
+run
+run
+# Failure!, FIFO is not reading the first word
+run
+# Failure!, FIFO is not reading the second word
+# Failure!, FIFO is not reading the third word
+run
+# Failure!, FIFO is not reading the fourth word
 run
 run
 quit -sim
-# End time: 08:59:05 on Mar 02,2023, Elapsed time: 0:05:05
-# Errors: 0, Warnings: 0
-do fifoScript.tcl
+# End time: 03:25:44 on Mar 05,2023, Elapsed time: 0:01:12
+# Errors: 0, Warnings: 2
+do TB.tcl
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 08:59:08 on Mar 02,2023
+# Start time: 03:25:47 on Mar 05,2023
+# vlog -reportprogress 300 Fifotb.v 
+# -- Compiling module FifoTB
+# 
+# Top level modules:
+# 	FifoTB
+# End time: 03:25:47 on Mar 05,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 03:25:47 on Mar 05,2023
 # vlog -reportprogress 300 Fifo.v 
 # -- Compiling module FIFO
 # 
 # Top level modules:
 # 	FIFO
-# End time: 08:59:08 on Mar 02,2023, Elapsed time: 0:00:00
+# End time: 03:25:47 on Mar 05,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vsim FIFO 
-# Start time: 08:59:08 on Mar 02,2023
+# vsim FifoTB 
+# Start time: 03:25:47 on Mar 05,2023
+# Loading work.FifoTB
 # Loading work.FIFO
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: 20115  Hostname: ABDELAZIZPC  ProcessID: 15604
+#           Attempting to use alternate WLF file "./wlftc569ce".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftc569ce
+run
+run
+# Success! FIFO is empty
+run
+run
+# Failure!, FIFO is not reading the first word
+# Failure!, FIFO is not reading the second word
 quit -sim
-# End time: 09:01:10 on Mar 02,2023, Elapsed time: 0:02:02
+# End time: 03:27:43 on Mar 05,2023, Elapsed time: 0:01:56
+# Errors: 0, Warnings: 2
+do TB.tcl
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 03:29:28 on Mar 05,2023
+# vlog -reportprogress 300 Fifotb.v 
+# -- Compiling module FifoTB
+# 
+# Top level modules:
+# 	FifoTB
+# End time: 03:29:28 on Mar 05,2023, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 03:29:28 on Mar 05,2023
+# vlog -reportprogress 300 Fifo.v 
+# -- Compiling module FIFO
+# 
+# Top level modules:
+# 	FIFO
+# End time: 03:29:29 on Mar 05,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vsim FifoTB 
+# Start time: 03:29:29 on Mar 05,2023
+# Loading work.FifoTB
+# Loading work.FIFO
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: 20115  Hostname: ABDELAZIZPC  ProcessID: 15604
+#           Attempting to use alternate WLF file "./wlftcxxrkw".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftcxxrkw
+run
+run
+# Success! FIFO is empty
+run
+run
+# Failure!, FIFO is not reading the first word
+# Failure!, FIFO is not reading the second word
+do TB.tcl
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 03:31:23 on Mar 05,2023
+# vlog -reportprogress 300 Fifotb.v 
+# -- Compiling module FifoTB
+# 
+# Top level modules:
+# 	FifoTB
+# End time: 03:31:23 on Mar 05,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 03:31:23 on Mar 05,2023
+# vlog -reportprogress 300 Fifo.v 
+# -- Compiling module FIFO
+# 
+# Top level modules:
+# 	FIFO
+# End time: 03:31:23 on Mar 05,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 03:31:27 on Mar 05,2023, Elapsed time: 0:01:58
+# Errors: 0, Warnings: 2
+# vsim FifoTB 
+# Start time: 03:31:27 on Mar 05,2023
+# Loading work.FifoTB
+# Loading work.FIFO
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: 20115  Hostname: ABDELAZIZPC  ProcessID: 15604
+#           Attempting to use alternate WLF file "./wlft70q992".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft70q992
+run
+run
+# Success! FIFO is empty
+run
+run
+# Failure!, FIFO is not reading the first word
+# Failure!, FIFO is not reading the second word
+do TB.tcl
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 03:38:19 on Mar 05,2023
+# vlog -reportprogress 300 Fifotb.v 
+# -- Compiling module FifoTB
+# 
+# Top level modules:
+# 	FifoTB
+# End time: 03:38:19 on Mar 05,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 03:38:19 on Mar 05,2023
+# vlog -reportprogress 300 Fifo.v 
+# -- Compiling module FIFO
+# 
+# Top level modules:
+# 	FIFO
+# End time: 03:38:19 on Mar 05,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 03:38:23 on Mar 05,2023, Elapsed time: 0:06:56
+# Errors: 0, Warnings: 2
+# vsim FifoTB 
+# Start time: 03:38:23 on Mar 05,2023
+# Loading work.FifoTB
+# Loading work.FIFO
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: 20115  Hostname: ABDELAZIZPC  ProcessID: 15604
+#           Attempting to use alternate WLF file "./wlfthv47cq".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlfthv47cq
+run
+run
+# Success! FIFO is empty
+run
+do TB.tcl
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 03:39:20 on Mar 05,2023
+# vlog -reportprogress 300 Fifotb.v 
+# -- Compiling module FifoTB
+# 
+# Top level modules:
+# 	FifoTB
+# End time: 03:39:20 on Mar 05,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 03:39:20 on Mar 05,2023
+# vlog -reportprogress 300 Fifo.v 
+# -- Compiling module FIFO
+# 
+# Top level modules:
+# 	FIFO
+# End time: 03:39:20 on Mar 05,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 03:39:24 on Mar 05,2023, Elapsed time: 0:01:01
+# Errors: 0, Warnings: 2
+# vsim FifoTB 
+# Start time: 03:39:24 on Mar 05,2023
+# Loading work.FifoTB
+# Loading work.FIFO
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: 20115  Hostname: ABDELAZIZPC  ProcessID: 15604
+#           Attempting to use alternate WLF file "./wlft6i39d3".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft6i39d3
+run
+run
+# Success! FIFO is empty
+quit -sim
+# End time: 03:39:47 on Mar 05,2023, Elapsed time: 0:00:23
+# Errors: 0, Warnings: 2
+do TB.tcl
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 03:40:16 on Mar 05,2023
+# vlog -reportprogress 300 Fifotb.v 
+# -- Compiling module FifoTB
+# 
+# Top level modules:
+# 	FifoTB
+# End time: 03:40:16 on Mar 05,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 03:40:16 on Mar 05,2023
+# vlog -reportprogress 300 Fifo.v 
+# -- Compiling module FIFO
+# 
+# Top level modules:
+# 	FIFO
+# End time: 03:40:16 on Mar 05,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim FifoTB 
+# Start time: 03:40:16 on Mar 05,2023
+# Loading work.FifoTB
+# Loading work.FIFO
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: 20115  Hostname: ABDELAZIZPC  ProcessID: 15604
+#           Attempting to use alternate WLF file "./wlft6qqfvr".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft6qqfvr
+run
+run
+# Failure!, FIFO is not empty
+run
+run
+# Failure!, FIFO is not reading the first word
+# Failure!, FIFO is not reading the second word
+do TB.tcl
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 03:42:01 on Mar 05,2023
+# vlog -reportprogress 300 Fifotb.v 
+# -- Compiling module FifoTB
+# 
+# Top level modules:
+# 	FifoTB
+# End time: 03:42:01 on Mar 05,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 03:42:01 on Mar 05,2023
+# vlog -reportprogress 300 Fifo.v 
+# -- Compiling module FIFO
+# 
+# Top level modules:
+# 	FIFO
+# End time: 03:42:01 on Mar 05,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 03:42:05 on Mar 05,2023, Elapsed time: 0:01:49
+# Errors: 0, Warnings: 2
+# vsim FifoTB 
+# Start time: 03:42:05 on Mar 05,2023
+# Loading work.FifoTB
+# Loading work.FIFO
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: 20115  Hostname: ABDELAZIZPC  ProcessID: 15604
+#           Attempting to use alternate WLF file "./wlftw3zmbh".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftw3zmbh
+run
+run
+# Failure!, FIFO is not empty
+run
+run
+# Failure!, FIFO is not reading the first word
+# Failure!, FIFO is not reading the second word
+run
+# Failure!, FIFO is not reading the third word
+# Success! FIFO is reading the fourth word
+run
+run
+run
+run
+run
+run
+do TB.tcl
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 03:43:19 on Mar 05,2023
+# vlog -reportprogress 300 Fifotb.v 
+# -- Compiling module FifoTB
+# 
+# Top level modules:
+# 	FifoTB
+# End time: 03:43:19 on Mar 05,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 03:43:19 on Mar 05,2023
+# vlog -reportprogress 300 Fifo.v 
+# -- Compiling module FIFO
+# 
+# Top level modules:
+# 	FIFO
+# End time: 03:43:20 on Mar 05,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# End time: 03:43:23 on Mar 05,2023, Elapsed time: 0:01:18
+# Errors: 0, Warnings: 2
+# vsim FifoTB 
+# Start time: 03:43:24 on Mar 05,2023
+# Loading work.FifoTB
+# Loading work.FIFO
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: 20115  Hostname: ABDELAZIZPC  ProcessID: 15604
+#           Attempting to use alternate WLF file "./wlftrnc664".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftrnc664
+run
+run
+# Failure!, FIFO is not empty
+do TB.tcl
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 03:44:06 on Mar 05,2023
+# vlog -reportprogress 300 Fifotb.v 
+# -- Compiling module FifoTB
+# 
+# Top level modules:
+# 	FifoTB
+# End time: 03:44:06 on Mar 05,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 03:44:06 on Mar 05,2023
+# vlog -reportprogress 300 Fifo.v 
+# -- Compiling module FIFO
+# 
+# Top level modules:
+# 	FIFO
+# End time: 03:44:07 on Mar 05,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# End time: 03:44:11 on Mar 05,2023, Elapsed time: 0:00:47
+# Errors: 0, Warnings: 2
+# vsim FifoTB 
+# Start time: 03:44:11 on Mar 05,2023
+# Loading work.FifoTB
+# Loading work.FIFO
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: 20115  Hostname: ABDELAZIZPC  ProcessID: 15604
+#           Attempting to use alternate WLF file "./wlft46jt1f".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft46jt1f
+run
+run
+# Success! FIFO is empty
+run
+run
+# Failure!, FIFO is not reading the first word
+# Failure!, FIFO is not reading the second word
+run
+# Failure!, FIFO is not reading the third word
+# Success! FIFO is reading the fourth word
+do TB.tcl
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 03:46:13 on Mar 05,2023
+# vlog -reportprogress 300 Fifotb.v 
+# -- Compiling module FifoTB
+# 
+# Top level modules:
+# 	FifoTB
+# End time: 03:46:13 on Mar 05,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 03:46:13 on Mar 05,2023
+# vlog -reportprogress 300 Fifo.v 
+# -- Compiling module FIFO
+# 
+# Top level modules:
+# 	FIFO
+# End time: 03:46:14 on Mar 05,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# End time: 03:46:17 on Mar 05,2023, Elapsed time: 0:02:06
+# Errors: 0, Warnings: 2
+# vsim FifoTB 
+# Start time: 03:46:17 on Mar 05,2023
+# Loading work.FifoTB
+# Loading work.FIFO
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: 20115  Hostname: ABDELAZIZPC  ProcessID: 15604
+#           Attempting to use alternate WLF file "./wlftkmcg7m".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftkmcg7m
+run
+run
+# Success! FIFO is empty
+run
+run
+# Failure!, FIFO is not reading the first word
+run
+# Failure!, FIFO is not reading the second word
+# Failure!, FIFO is not reading the third word
+run
+# Failure!, FIFO is not reading the fourth word
+do TB.tcl
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 03:50:24 on Mar 05,2023
+# vlog -reportprogress 300 Fifotb.v 
+# -- Compiling module FifoTB
+# 
+# Top level modules:
+# 	FifoTB
+# End time: 03:50:24 on Mar 05,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 03:50:24 on Mar 05,2023
+# vlog -reportprogress 300 Fifo.v 
+# -- Compiling module FIFO
+# 
+# Top level modules:
+# 	FIFO
+# End time: 03:50:24 on Mar 05,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 03:50:28 on Mar 05,2023, Elapsed time: 0:04:11
+# Errors: 0, Warnings: 2
+# vsim FifoTB 
+# Start time: 03:50:28 on Mar 05,2023
+# Loading work.FifoTB
+# Loading work.FIFO
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: 20115  Hostname: ABDELAZIZPC  ProcessID: 15604
+#           Attempting to use alternate WLF file "./wlftji3n4e".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftji3n4e
+run
+run
+# Success! FIFO is empty
+run
+run
+# Failure!, FIFO is not reading the first word
+run
+# Failure!, FIFO is not reading the second word
+# Failure!, FIFO is not reading the third word
+do TB.tcl
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 03:53:53 on Mar 05,2023
+# vlog -reportprogress 300 Fifotb.v 
+# -- Compiling module FifoTB
+# 
+# Top level modules:
+# 	FifoTB
+# End time: 03:53:53 on Mar 05,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 03:53:53 on Mar 05,2023
+# vlog -reportprogress 300 Fifo.v 
+# -- Compiling module FIFO
+# 
+# Top level modules:
+# 	FIFO
+# End time: 03:53:53 on Mar 05,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 03:53:57 on Mar 05,2023, Elapsed time: 0:03:29
+# Errors: 0, Warnings: 2
+# vsim FifoTB 
+# Start time: 03:53:57 on Mar 05,2023
+# Loading work.FifoTB
+# Loading work.FIFO
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: 20115  Hostname: ABDELAZIZPC  ProcessID: 15604
+#           Attempting to use alternate WLF file "./wlftwm5agz".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftwm5agz
+run
+run
+run
+# Success! FIFO is empty
+run
+run
+run
+run
+# Failure!, FIFO is not reading the first word
+add list \
+sim:/FifoTB/ReadingIsFaster 
+add watch \
+sim:/FifoTB/ReadingIsFaster 
+add wave \Fifo\readAddressPointer
+# ** UI-Msg: (vish-4014) No objects found matching 'FifoeadAddressPointer'.
+add wave sim:/Fifo/readAddressPointer
+# ** UI-Msg: (vish-4014) No objects found matching '/Fifo/readAddressPointer'.
+add wave sim:/FIFO/readAddressPointer
+# ** UI-Msg: (vish-4014) No objects found matching '/FIFO/readAddressPointer'.
+add wave FIFO/readAddressPointer
+# ** UI-Msg: (vish-4014) No objects found matching 'FIFO/readAddressPointer'.
+run
+# Failure!, FIFO is not reading the second word
+run
+# Failure!, FIFO is not reading the third word
+run
+# Failure!, FIFO is not reading the fourth word
+run
+run
+run
+run
+run
+run
+run
+run
+run
+do TB.tcl
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 03:58:09 on Mar 05,2023
+# vlog -reportprogress 300 Fifotb.v 
+# -- Compiling module FifoTB
+# 
+# Top level modules:
+# 	FifoTB
+# End time: 03:58:09 on Mar 05,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 03:58:09 on Mar 05,2023
+# vlog -reportprogress 300 Fifo.v 
+# -- Compiling module FIFO
+# 
+# Top level modules:
+# 	FIFO
+# End time: 03:58:09 on Mar 05,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 03:58:14 on Mar 05,2023, Elapsed time: 0:04:17
+# Errors: 0, Warnings: 2
+# vsim FifoTB 
+# Start time: 03:58:14 on Mar 05,2023
+# Loading work.FifoTB
+# Loading work.FIFO
+# ** Error: (vsim-3043) Unresolved reference to 'display'.
+#    Time: 0 ps  Iteration: 0  Instance: /FifoTB/fifoUUT File: Fifo.v Line: 36
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./TB.tcl PAUSED at line 3
+do TB.tcl
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 03:58:34 on Mar 05,2023
+# vlog -reportprogress 300 Fifotb.v 
+# -- Compiling module FifoTB
+# 
+# Top level modules:
+# 	FifoTB
+# End time: 03:58:34 on Mar 05,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 03:58:34 on Mar 05,2023
+# vlog -reportprogress 300 Fifo.v 
+# -- Compiling module FIFO
+# 
+# Top level modules:
+# 	FIFO
+# End time: 03:58:34 on Mar 05,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim FifoTB 
+# Start time: 03:58:14 on Mar 05,2023
+# Loading work.FifoTB
+# Loading work.FIFO
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: 20115  Hostname: ABDELAZIZPC  ProcessID: 15604
+#           Attempting to use alternate WLF file "./wlfta5bx81".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlfta5bx81
+run
+run
+# Success! FIFO is empty
+# writeAddressPointer =  0
+run
+# readAddressPointer =  0
+run
+# Failure!, FIFO is not reading the first word
+# Failure!, FIFO is not reading the second word
+run
+# Failure!, FIFO is not reading the third word
+# Failure!, FIFO is not reading the fourth word
+do TB.tcl
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 04:03:12 on Mar 05,2023
+# vlog -reportprogress 300 Fifotb.v 
+# -- Compiling module FifoTB
+# 
+# Top level modules:
+# 	FifoTB
+# End time: 04:03:12 on Mar 05,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 04:03:12 on Mar 05,2023
+# vlog -reportprogress 300 Fifo.v 
+# -- Compiling module FIFO
+# 
+# Top level modules:
+# 	FIFO
+# End time: 04:03:12 on Mar 05,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 04:03:16 on Mar 05,2023, Elapsed time: 0:05:02
+# Errors: 1, Warnings: 2
+# vsim FifoTB 
+# Start time: 04:03:16 on Mar 05,2023
+# Loading work.FifoTB
+# Loading work.FIFO
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: 20115  Hostname: ABDELAZIZPC  ProcessID: 15604
+#           Attempting to use alternate WLF file "./wlftdefcmh".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftdefcmh
+run
+run
+# Success! FIFO is empty
+# writeAddressPointer =  0
+run
+# readAddressPointer =  0
+do TB.tcl
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 04:04:36 on Mar 05,2023
+# vlog -reportprogress 300 Fifotb.v 
+# -- Compiling module FifoTB
+# 
+# Top level modules:
+# 	FifoTB
+# End time: 04:04:36 on Mar 05,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 04:04:36 on Mar 05,2023
+# vlog -reportprogress 300 Fifo.v 
+# -- Compiling module FIFO
+# 
+# Top level modules:
+# 	FIFO
+# End time: 04:04:36 on Mar 05,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 04:04:40 on Mar 05,2023, Elapsed time: 0:01:24
+# Errors: 0, Warnings: 2
+# vsim FifoTB 
+# Start time: 04:04:40 on Mar 05,2023
+# Loading work.FifoTB
+# Loading work.FIFO
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: 20115  Hostname: ABDELAZIZPC  ProcessID: 15604
+#           Attempting to use alternate WLF file "./wlftcqh1et".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftcqh1et
+run
+run
+# Success! FIFO is empty
+# writing into address =  0
+# writeAddressPointer =  0
+run
+# readAddressPointer =  0
+run
+# Failure!, FIFO is not reading the first word
+# Failure!, FIFO is not reading the second word
+run
+# Failure!, FIFO is not reading the third word
+# Failure!, FIFO is not reading the fourth word
+run
+# writing into address =  1
+# writeAddressPointer =  1
+run
+# writing into address =  2
+# writeAddressPointer =  2
+run
+# writing into address =  3
+# writeAddressPointer =  3
+run
+# writing into address =  4
+# writeAddressPointer =  4
+run
+# writing into address =  5
+# writeAddressPointer =  5
+run
+# writing into address =  6
+# writeAddressPointer =  6
+run
+# writing into address =  7
+# writeAddressPointer =  7
+run
+# writing into address =  8
+# writeAddressPointer =  8
+run
+# writing into address =  9
+# writeAddressPointer =  9
+run
+# writing into address = 10
+# writeAddressPointer = 10
+run
+# writing into address = 11
+# writeAddressPointer = 11
+run
+# writing into address = 12
+# writeAddressPointer = 12
+run
+# writing into address = 13
+# writeAddressPointer = 13
+run
+# writing into address = 14
+# writeAddressPointer = 14
+run
+# writing into address = 15
+# writeAddressPointer = 15
+run
+# writing into address = 16
+# writeAddressPointer = 16
+run
+# Failure!, FIFO is not full
+# readAddressPointer =  1
+run
+# readAddressPointer =  2
+run
+# readAddressPointer =  3
+run
+# readAddressPointer =  4
+run
+# readAddressPointer =  5
+run
+# readAddressPointer =  6
+run
+# readAddressPointer =  7
+run
+# readAddressPointer =  8
+run
+# readAddressPointer =  9
+run
+# readAddressPointer = 10
+run
+# readAddressPointer = 11
+run
+# readAddressPointer = 12
+run
+# readAddressPointer = 13
+run
+# readAddressPointer = 14
+run
+# readAddressPointer = 15
+run
+# readAddressPointer = 16
+run
+# Success! FIFO is empty
+run
+run
+run
+do TB.tcl
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 04:07:18 on Mar 05,2023
+# vlog -reportprogress 300 Fifotb.v 
+# -- Compiling module FifoTB
+# 
+# Top level modules:
+# 	FifoTB
+# End time: 04:07:18 on Mar 05,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 04:07:18 on Mar 05,2023
+# vlog -reportprogress 300 Fifo.v 
+# -- Compiling module FIFO
+# 
+# Top level modules:
+# 	FIFO
+# End time: 04:07:18 on Mar 05,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 04:07:20 on Mar 05,2023, Elapsed time: 0:02:40
+# Errors: 0, Warnings: 2
+# vsim FifoTB 
+# Start time: 04:07:20 on Mar 05,2023
+# Loading work.FifoTB
+# Loading work.FIFO
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: 20115  Hostname: ABDELAZIZPC  ProcessID: 15604
+#           Attempting to use alternate WLF file "./wlftm3wgfi".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftm3wgfi
+run
+run
+run
+# Success! FIFO is empty
+run
+# writing into address =  0
+# writeAddressPointer =  0
+run
+run
+# readAddressPointer =  0
+run
+# Failure!, FIFO is not reading the first word
+do TB.tcl
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 04:09:19 on Mar 05,2023
+# vlog -reportprogress 300 Fifotb.v 
+# -- Compiling module FifoTB
+# 
+# Top level modules:
+# 	FifoTB
+# End time: 04:09:19 on Mar 05,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 04:09:19 on Mar 05,2023
+# vlog -reportprogress 300 Fifo.v 
+# -- Compiling module FIFO
+# 
+# Top level modules:
+# 	FIFO
+# End time: 04:09:19 on Mar 05,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 04:09:24 on Mar 05,2023, Elapsed time: 0:02:04
+# Errors: 0, Warnings: 2
+# vsim FifoTB 
+# Start time: 04:09:24 on Mar 05,2023
+# Loading work.FifoTB
+# Loading work.FIFO
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: 20115  Hostname: ABDELAZIZPC  ProcessID: 15604
+#           Attempting to use alternate WLF file "./wlftnzqtk5".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftnzqtk5
+do TB.tcl
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 04:09:34 on Mar 05,2023
+# vlog -reportprogress 300 Fifotb.v 
+# -- Compiling module FifoTB
+# 
+# Top level modules:
+# 	FifoTB
+# End time: 04:09:34 on Mar 05,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 04:09:34 on Mar 05,2023
+# vlog -reportprogress 300 Fifo.v 
+# -- Compiling module FIFO
+# 
+# Top level modules:
+# 	FIFO
+# End time: 04:09:34 on Mar 05,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 04:09:39 on Mar 05,2023, Elapsed time: 0:00:15
+# Errors: 0, Warnings: 2
+# vsim FifoTB 
+# Start time: 04:09:39 on Mar 05,2023
+# Loading work.FifoTB
+# Loading work.FIFO
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: 20115  Hostname: ABDELAZIZPC  ProcessID: 15604
+#           Attempting to use alternate WLF file "./wlft4v1dt1".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft4v1dt1
+run
+run
+run
+# Success! FIFO is empty
+run
+# writing into address =  0
+# writeAddressPointer =  0
+run
+run
+# writing into address =  1
+# writeAddressPointer =  1
+run
+run
+# writing into address =  2
+# writeAddressPointer =  2
+run
+run
+# writing into address =  3
+# writeAddressPointer =  3
+run
+run
+# Failure!, FIFO is not reading the first word
+# readAddressPointer =  0
+run
+# Success! FIFO is reading the second word
+run
+# Failure!, FIFO is not reading the third word
+# readAddressPointer =  1
+add wave data_out
+run
+# Failure!, FIFO is not reading the fourth word
+do TB.tcl
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 04:11:55 on Mar 05,2023
+# vlog -reportprogress 300 Fifotb.v 
+# -- Compiling module FifoTB
+# 
+# Top level modules:
+# 	FifoTB
+# End time: 04:11:56 on Mar 05,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 04:11:56 on Mar 05,2023
+# vlog -reportprogress 300 Fifo.v 
+# -- Compiling module FIFO
+# 
+# Top level modules:
+# 	FIFO
+# End time: 04:11:56 on Mar 05,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 04:12:01 on Mar 05,2023, Elapsed time: 0:02:22
+# Errors: 0, Warnings: 2
+# vsim FifoTB 
+# Start time: 04:12:01 on Mar 05,2023
+# Loading work.FifoTB
+# Loading work.FIFO
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: 20115  Hostname: ABDELAZIZPC  ProcessID: 15604
+#           Attempting to use alternate WLF file "./wlft7z4x8v".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft7z4x8v
+do TB.tcl
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 04:12:13 on Mar 05,2023
+# vlog -reportprogress 300 Fifotb.v 
+# -- Compiling module FifoTB
+# 
+# Top level modules:
+# 	FifoTB
+# End time: 04:12:13 on Mar 05,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 04:12:14 on Mar 05,2023
+# vlog -reportprogress 300 Fifo.v 
+# -- Compiling module FIFO
+# 
+# Top level modules:
+# 	FIFO
+# End time: 04:12:14 on Mar 05,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 04:12:18 on Mar 05,2023, Elapsed time: 0:00:17
+# Errors: 0, Warnings: 2
+# vsim FifoTB 
+# Start time: 04:12:18 on Mar 05,2023
+# Loading work.FifoTB
+# Loading work.FIFO
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: 20115  Hostname: ABDELAZIZPC  ProcessID: 15604
+#           Attempting to use alternate WLF file "./wlft8bkika".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft8bkika
+# Success! FIFO is empty
+# writing into address =  0
+# writeAddressPointer =  0
+run
+run
+# writing into address =  1
+# writeAddressPointer =  1
+run
+run
+# writing into address =  2
+# writeAddressPointer =  2
+run
+run
+# writing into address =  3
+# writeAddressPointer =  3
+run
+run
+# readAddressPointer =  0
+run
+# Failure!, FIFO is not reading the first word
+run
+# readAddressPointer =  1
+run
+# Failure!, FIFO is not reading the second word
+run
+# readAddressPointer =  2
+run
+# Failure!, FIFO is not reading the third word
+run
+# readAddressPointer =  3
+run
+# Failure!, FIFO is not reading the fourth word
+do TB.tcl
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 04:14:43 on Mar 05,2023
+# vlog -reportprogress 300 Fifotb.v 
+# -- Compiling module FifoTB
+# 
+# Top level modules:
+# 	FifoTB
+# End time: 04:14:43 on Mar 05,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 04:14:43 on Mar 05,2023
+# vlog -reportprogress 300 Fifo.v 
+# -- Compiling module FIFO
+# 
+# Top level modules:
+# 	FIFO
+# End time: 04:14:43 on Mar 05,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 04:14:48 on Mar 05,2023, Elapsed time: 0:02:30
+# Errors: 0, Warnings: 2
+# vsim FifoTB 
+# Start time: 04:14:48 on Mar 05,2023
+# Loading work.FifoTB
+# Loading work.FIFO
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: 20115  Hostname: ABDELAZIZPC  ProcessID: 15604
+#           Attempting to use alternate WLF file "./wlft0333gc".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft0333gc
+# Success! FIFO is empty
+# writing into address =  0
+# writeAddressPointer =  0
+# writing into address =  1
+# writeAddressPointer =  1
+# writing into address =  2
+# writeAddressPointer =  2
+# writing into address =  3
+# writeAddressPointer =  3
+run
+run
+# readAddressPointer =  0
+run
+run
+# Failure!, FIFO is not reading the first word
+# readAddressPointer =  1
+do TB.tcl
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 04:17:34 on Mar 05,2023
+# vlog -reportprogress 300 Fifotb.v 
+# -- Compiling module FifoTB
+# 
+# Top level modules:
+# 	FifoTB
+# End time: 04:17:34 on Mar 05,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 04:17:34 on Mar 05,2023
+# vlog -reportprogress 300 Fifo.v 
+# -- Compiling module FIFO
+# 
+# Top level modules:
+# 	FIFO
+# End time: 04:17:34 on Mar 05,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 04:17:38 on Mar 05,2023, Elapsed time: 0:02:50
+# Errors: 0, Warnings: 2
+# vsim FifoTB 
+# Start time: 04:17:38 on Mar 05,2023
+# Loading work.FifoTB
+# Loading work.FIFO
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: 20115  Hostname: ABDELAZIZPC  ProcessID: 15604
+#           Attempting to use alternate WLF file "./wlft38qrg1".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft38qrg1
+# Success! FIFO is empty
+# writing into address =  0
+# writeAddressPointer =  0
+# writing into address =  1
+# writeAddressPointer =  1
+# writing into address =  2
+# writeAddressPointer =  2
+# writing into address =  3
+# writeAddressPointer =  3
+run
+run
+# readAddressPointer =  0
+run
+run
+# Success! FIFO is reading the first word
+# readAddressPointer =  1
+run
+run
+# Success! FIFO is reading the second word
+# readAddressPointer =  2
+run
+run
+# Success! FIFO is reading the third word
+# readAddressPointer =  3
+run
+run
+# Success! FIFO is reading the fourth word
+run
+run
+# writing into address =  4
+# writeAddressPointer =  4
+run 1000
+# writing into address =  5
+# writeAddressPointer =  5
+# writing into address =  6
+# writeAddressPointer =  6
+# writing into address =  7
+# writeAddressPointer =  7
+# writing into address =  8
+# writeAddressPointer =  8
+# writing into address =  9
+# writeAddressPointer =  9
+run
+run 1000
+# writing into address = 10
+# writeAddressPointer = 10
+# writing into address = 11
+# writeAddressPointer = 11
+# writing into address = 12
+# writeAddressPointer = 12
+# writing into address = 13
+# writeAddressPointer = 13
+# writing into address = 14
+# writeAddressPointer = 14
+run 1000
+# writing into address = 15
+# writeAddressPointer = 15
+# writing into address = 16
+# writeAddressPointer = 16
+# writing into address = 17
+# writeAddressPointer = 17
+# writing into address = 18
+# writeAddressPointer = 18
+# writing into address = 19
+# writeAddressPointer = 19
+run 1000
+# Failure!, FIFO is not full
+# readAddressPointer =  4
+# readAddressPointer =  5
+# readAddressPointer =  6
+# readAddressPointer =  7
+# readAddressPointer =  8
+do TB.tcl
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 04:18:56 on Mar 05,2023
+# vlog -reportprogress 300 Fifotb.v 
+# -- Compiling module FifoTB
+# 
+# Top level modules:
+# 	FifoTB
+# End time: 04:18:56 on Mar 05,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 04:18:56 on Mar 05,2023
+# vlog -reportprogress 300 Fifo.v 
+# -- Compiling module FIFO
+# 
+# Top level modules:
+# 	FIFO
+# End time: 04:18:56 on Mar 05,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 04:19:01 on Mar 05,2023, Elapsed time: 0:01:23
+# Errors: 0, Warnings: 2
+# vsim FifoTB 
+# Start time: 04:19:01 on Mar 05,2023
+# Loading work.FifoTB
+# Loading work.FIFO
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: 20115  Hostname: ABDELAZIZPC  ProcessID: 15604
+#           Attempting to use alternate WLF file "./wlftf7i0in".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftf7i0in
+# Success! FIFO is empty
+# writing into address =  0
+# writeAddressPointer =  0
+# writing into address =  1
+# writeAddressPointer =  1
+# writing into address =  2
+# writeAddressPointer =  2
+# writing into address =  3
+# writeAddressPointer =  3
+# readAddressPointer =  0
+# Success! FIFO is reading the first word
+# readAddressPointer =  1
+# Success! FIFO is reading the second word
+# readAddressPointer =  2
+# Success! FIFO is reading the third word
+# readAddressPointer =  3
+# Success! FIFO is reading the fourth word
+# writing into address =  4
+# writeAddressPointer =  4
+# writing into address =  5
+# writeAddressPointer =  5
+# writing into address =  6
+# writeAddressPointer =  6
+# writing into address =  7
+# writeAddressPointer =  7
+# writing into address =  8
+# writeAddressPointer =  8
+# writing into address =  9
+# writeAddressPointer =  9
+# writing into address = 10
+# writeAddressPointer = 10
+# writing into address = 11
+# writeAddressPointer = 11
+# writing into address = 12
+# writeAddressPointer = 12
+# writing into address = 13
+# writeAddressPointer = 13
+# writing into address = 14
+# writeAddressPointer = 14
+# writing into address = 15
+# writeAddressPointer = 15
+# writing into address = 16
+# writeAddressPointer = 16
+# writing into address = 17
+# writeAddressPointer = 17
+# writing into address = 18
+# writeAddressPointer = 18
+# writing into address = 19
+# writeAddressPointer = 19
+# writing into address = 20
+# writeAddressPointer = 20
+# writing into address = 21
+# writeAddressPointer = 21
+# writing into address = 22
+# writeAddressPointer = 22
+# writing into address = 23
+# writeAddressPointer = 23
+# writing into address = 24
+# writeAddressPointer = 24
+# writing into address = 25
+# writeAddressPointer = 25
+# writing into address = 26
+# writeAddressPointer = 26
+# writing into address = 27
+# writeAddressPointer = 27
+# writing into address = 28
+# writeAddressPointer = 28
+# writing into address = 29
+# writeAddressPointer = 29
+# writing into address = 30
+# writeAddressPointer = 30
+# writing into address = 31
+# inTheElse
+# writing into address =  0
+# writeAddressPointer =  0
+# writing into address =  1
+# writeAddressPointer =  1
+# writing into address =  2
+# writeAddressPointer =  2
+# writing into address =  3
+# writeAddressPointer =  3
+# Success! FIFO is full
+# readAddressPointer =  4
+# readAddressPointer =  5
+# readAddressPointer =  6
+# readAddressPointer =  7
+# readAddressPointer =  8
+# readAddressPointer =  9
+# readAddressPointer = 10
+# readAddressPointer = 11
+run 1000
+# readAddressPointer = 12
+# readAddressPointer = 13
+# readAddressPointer = 14
+# readAddressPointer = 15
+# readAddressPointer = 16
+run 1000
+# readAddressPointer = 17
+# readAddressPointer = 18
+# readAddressPointer = 19
+# readAddressPointer = 20
+# readAddressPointer = 21
+run 1000
+# readAddressPointer = 22
+# readAddressPointer = 23
+# readAddressPointer = 24
+# readAddressPointer = 25
+# readAddressPointer = 26
+run 1000
+# readAddressPointer = 27
+# readAddressPointer = 28
+# readAddressPointer = 29
+# readAddressPointer = 30
+run
+run
+# readAddressPointer =  0
+run
+run
+# readAddressPointer =  1
+run 1000
+# readAddressPointer =  2
+# readAddressPointer =  3
+# Success! FIFO is empty
+do TB.tcl
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 04:20:22 on Mar 05,2023
+# vlog -reportprogress 300 Fifotb.v 
+# -- Compiling module FifoTB
+# 
+# Top level modules:
+# 	FifoTB
+# End time: 04:20:22 on Mar 05,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 04:20:22 on Mar 05,2023
+# vlog -reportprogress 300 Fifo.v 
+# -- Compiling module FIFO
+# 
+# Top level modules:
+# 	FIFO
+# End time: 04:20:22 on Mar 05,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# End time: 04:20:24 on Mar 05,2023, Elapsed time: 0:01:23
+# Errors: 0, Warnings: 2
+# vsim FifoTB 
+# Start time: 04:20:24 on Mar 05,2023
+# Loading work.FifoTB
+# Loading work.FIFO
