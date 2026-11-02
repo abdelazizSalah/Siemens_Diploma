@@ -28,6 +28,8 @@ Built a FIFO memory design in Verilog to explore buffering, read/write operation
 
 The work shown here is educational coursework focused on digital design and verification fundamentals.
 
+Implementation exists at [FIFO](Sessions/session7/FIFO)
+
 ## Repository Structure
 
 ```text
