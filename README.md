@@ -49,11 +49,8 @@ Siemens_Diploma/
 1. Start with the [training agenda](formal_track_agenda.xlsx) for the course sequence.
 2. Browse the [`Formal/`](Formal/) directory for the practical formal-track materials.
 3. Review [`Sessions/`](Sessions/) for the associated sessions and references.
-4. For an individual HDL exercise, consult the files in its own directory to determine which simulator or verification environment is required. There is no verified repository-wide build command.
 
 ## Relevance to Hardware Verification
 
 This training provided a foundation for interpreting digital hardware designs and understanding their intended behavior—skills that support further work in **RTL verification, assertion-based verification, and formal property verification**.
 
-**Repository owner:** [Abdelaziz Salah](https://github.com/abdelazizSalah)  
-**Context:** Siemens EDA Formal Verification Diploma, February–April 2023
